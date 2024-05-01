@@ -1,0 +1,43 @@
+/* casecade */
+/* p{
+    color: gold;
+}
+p{
+    color: yellow;
+} */
+
+/* !important */
+
+/* p
+{
+    color: blueviolet !important;
+} */
+
+/* speficity */
+
+/* p
+{
+    color: blue !important;
+}
+#one
+{
+    color: hotpink;
+}
+.two
+{
+    color: green;
+} */
+/* inheritance */
+/* #inhrert
+{
+    color: inherit;
+}
+#initial
+{
+    color: initial;
+}
+*//*
+.parant
+{
+    color: rgb(10, 90, 120);
+} */
