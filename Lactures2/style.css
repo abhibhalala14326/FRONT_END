@@ -1,0 +1,24 @@
+/* Universal Selector */
+*{
+    color: rgb(237, 221, 41);
+}
+
+/* External CSS */
+p{
+    color:green;
+}
+
+/* ID Selector */
+#para_id{
+    color: blueviolet;
+}
+
+/* Class Selector */
+.para_class{
+    color: chartreuse;
+}
+
+/* Grouping Selector */
+h1,h2,h3{
+    color: rgb(160, 22, 160);
+}

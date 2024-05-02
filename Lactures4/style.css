@@ -1,0 +1,176 @@
+.color
+{
+    /* name color */
+    
+    color:blue ;
+}
+.bgcolor
+{
+    /* rgb  color*/
+
+    background-color:rgb(10, 20, 100) ;
+}
+.border
+{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+.solid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 2px solid black;
+
+}
+
+.dotted
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 2px dotted black;
+
+}
+.dashed
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 2px dashed black;
+
+}
+
+.double
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 2px double black;
+
+}
+
+.groove
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px groove black;
+
+}
+.ridge
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px ridge black;
+
+}
+.inset
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px inset black;
+
+}
+.outset
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px outset black;
+
+}
+
+/* apply karel border ne none kari de che */
+.none
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px none black;
+    border-radius: ;
+
+}
+/* apply karel border ne hidden kari de che */
+
+
+.hidden
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  100px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 8px hidden black;
+
+}
+.border-radius
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width:  300px;
+    background-color: aqua;
+    text-align: center;
+    color: wheat;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+
+
+
