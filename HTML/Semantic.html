@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table,th,td
+        {
+            border: 2px solid black;
+        } */
+        #t1 {
+            background-color: rgba(59, 90, 20, 0.2);
+        }
+
+        #t2 {
+            background-color: rgba(59, 90, 200, 0.2);
+        }
+
+        #t3 {
+            background-color: rgba(0, 0, 255, 0.3);
+
+
+        }
+
+        * {
+            padding: 30px;
+        }
+
+        #th1 {
+            background-color: red;
+        }
+
+        #th2 {
+            background-color: green;
+        }
+
+        #th3 {
+            background-color: rgb(186, 137, 200);
+        }
+
+        #th6 {
+            background-color: #fca503;
+        }
+
+        #th7 {
+            background-color: #dffc03;
+        }
+
+        #th8 {
+            background-color: #1c03fc;
+        }
+
+        #th9 {
+            background-color: #7b03fc;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Semantic HTML</h1>
+        <table id="t1">
+            <tr>
+                <th colspan="2" id="th1">
+                    < header>
+                </th>
+                <!-- <th></th> -->
+                </th>
+
+            </tr>
+            <tr>
+                <th colspan="2" id="th2">
+                    < nav>
+                </th>
+                <!-- <th></th> -->
+            </tr>
+            <th id="th3">
+                < aside>
+            </th>
+            <th id="th4">
+                <table id="t2">
+                    <tr>
+                        <th>
+                            < main>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="th5">
+                            <table id="t3">
+                                <tr>
+                                    <th>
+                                        < article>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th id="th6">
+                                        < figure>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th id="th7">
+                                        < p>
+                                    </th>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th id="th8">< section ></th>
+                    </tr>
+                </table>
+
+            </th>
+            <tr>
+                <th colspan="2" id="th9">< footer ></th>
+                <!-- <th></th> -->
+            </tr>
+        </table>
+    </center>
+
+
+
+
+<!-- NON semantic -->
+
+
+
+
+
+    <center>
+        <aside>
+        <h1>Non-Semantic HTML</h1>
+        <table border="1" style="background-color: rgba(59, 90, 20, 0.2);">
+            <tr>
+                <th colspan="2" >
+                    < div>   
+                </th>
+                <!-- <th></th> -->
+                </th>
+
+            </tr>
+            <tr>
+                <th colspan="2" style="background-color: #9eaf20;" >
+                    < span>
+                </th>
+                <!-- <th></th> -->
+            </tr>
+            <th >
+                < div>
+            </th>
+            <th >
+                <table 
+                    <tr>
+                        <th>
+                            < div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <table border="1">
+                                <tr>
+                                    <th>
+                                        < div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th >
+                                        < div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th >
+                                        < div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th border="1" >< div ></th>
+                    </tr>
+                </table>
+
+            </th>
+            <tr>
+                <th colspan="2" >< div ></th>
+                <!-- <th></th> --> 
+            </tr>
+        </table>
+    </center>
+</aside>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+#1
+{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkblue;
+    position: relative;
+}
+#2
+{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 2px solid yellow;
+    position: absolute;
+}
+#3
+{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkblue;
+    position: static;
+}
+#4
+{display: flex;
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkblue;
+    position: fixed;
+}

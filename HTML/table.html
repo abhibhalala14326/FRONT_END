@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,td,th{
+            border: 1px solid rgb(213, 104, 15);
+            border-collapse:collapse ;
+            background-image: url(https://images.freeimages.com/images/large-previews/254/pen-tip-1-1166574.jpg?fmt=webp&w=500);
+            background-size: cover;
+        background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  color: white;
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <center><table>
+        <h1>table 1</h1>
+<tr>
+    <th rowspan="3">DAY</th>
+    <th colspan="3">Seminar</th>
+   
+
+    
+</tr>
+<tr>
+    <th colspan="2">schedule</th>
+    <th rowspan="2">topic</th>
+
+</tr>
+<tr>
+   
+    <th>begin</th>
+    <th>End</th>
+</tr>
+<tr>
+    <th rowspan="2">monday</th>
+    <th rowspan="2">8:00 am</th>
+    <th rowspan="2">5:00 pm</th>
+    <th>introduction xml</th>
+</tr>
+<tr>
+    
+
+    <th>Validity DTD and relax NG</th>
+</tr> 
+<tr>
+    <th rowspan="3">tuesday</th>
+    <th>8:00 am</th>
+    <th>11:00 am</th>
+    <th rowspan="2">x path</th>
+    
+</tr>
+<tr>
+    
+    <th>11:00 am</th>
+    <th>2:00 am</th>
+    
+    
+</tr>
+<tr>
+    
+    <th>2:00 am</th>
+    <th>5:00 am</th>
+    <th>XSL transfrormations</th>
+    
+</tr>
+<tr>
+    <th>wednesday</th>
+    <th>8:00 am</th>
+    <th>12:00 pm</th>
+    <th>XSL Formating objects</th>
+</tr>
+
+
+
+
+
+</table>
+<hr>
+<h1>table 2</h1>
+
+<table>
+    <tr>
+        <th>table 1</th>
+        <th>table 1
+            <table>
+                <tr>
+                    <th>table 2</th>
+                    <th>table 2</th>
+                </tr>
+                <tr>
+                    <th>table 2</th>
+                    <th>table 2</th>
+                </tr>
+            </table>
+        </th>
+        <tr>
+            <th>this contains a list 
+               <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+               </ul>
+            </th>
+            <th> table 1</th>
+        </tr>
+    </tr>
+</table>
+<hr>
+<h1>table 3</h1>
+<table>
+
+    <tr>
+        <th>Header column 1</th>
+        <th>Header column 2</th>
+        <th>Header column 3</th>
+        <th>Header column 4</th>
+       
+    </tr>
+    <tr>
+        <th rowspan="4">row item 1</th>
+        <th rowspan="4">row item 2</th>
+        <th>row 2 nested table 1</th>
+        <th rowspan="4">row 2 - item 4 a second line</th>
+    </tr>
+    <tr>
+    <th>row 1 header item </th>
+</tr>
+
+<tr>
+    <th>row 2 header item </th>
+</tr>
+<tr>
+    <th>row 2 header item </th>
+</tr>
+<tr>
+    <th>row 3 - item 1</th>
+    <th>row 3 - item 2</th>
+    <th>     </th>
+    <th>row 3 - item 3</th>
+</tr>
+<tr>
+    <th>row 4 - item 1</th>
+    <th>row 4 - item 2</th>
+    <th>row 4 - item 3</th>
+    <th>     </th>
+</tr>
+</table>
+<hr>
+
+
+
+<h1>table 4</h1>
+
+<table style="border-collapse: collapse";>
+<tr>
+    <th rowspan="3" colspan="4">a</th>
+    <th colspan="2">d</th>
+    <th colspan="2">E</th>
+    <!-- <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th id="hide"></th> -->
+</tr>
+<tr>
+    <th colspan="2">f</th>
+    <!-- <th></th> -->
+    <th colspan="2">g</th>
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th></th> -->
+</tr>
+<tr>
+    <th colspan="2">h</th>
+    <th colspan="2">i</th>
+    <!-- <th></th>
+    <th></th> -->
+    <!-- <th></th>
+    <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th></th> -->
+</tr>
+<tr>
+    <th colspan="4" rowspan="2">b</th>
+    <th colspan="2">j</th>
+    <th colspan="2">k</th>
+    <!-- <th></th>
+    <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th style="height: 5px;" colspan="4" rowspan="2"> L  </th>
+    <!-- <th>   </th>
+    <th>   </th>
+    <th>   </th> -->
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th colspan="4" rowspan="3">c</th>
+    <!-- <th colspan="4 " rowspan="3"></th> -->
+    <!-- <th></th>
+    <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <!-- <th></th>
+    <th></th>
+    <th></th>
+    <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th>Sl</th>
+    <th>items</th>
+    <th>due dt</th>
+    <th>QTY</th>
+    <th>RATE</th>
+    <th>per</th>
+    <th>dis%</th>
+    <th>Amt</th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+
+
+
+
+<!-- down table -->
+<tr>
+    <th style="height: 5px ; font-size: 5px; text-align: left;"  > AMT IN WORD      </th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th> 
+     <th style="font-size: 7%;">e.&o.e</th>
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+<tr>
+    <th  style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th colspan="4 " rowspan="4"></th>
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th style="height: 5px ; font-size: 5px; text-align: left;"    >COMPANY NAME</th>
+    <th > </th>
+    <th></th>
+    <th></th> 
+    <!-- <th></th> -->
+    <!-- <th></th>
+     <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+<tr>
+    <th style="height: 5px;"></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <!-- <th></th> -->
+    <!-- <th></th>
+    <th></th>
+    <th></th> -->
+</tr>
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+<hr>
+<h1>table 5</h1>
+
+<table border="1">
+<tr>
+    <th rowspan="2" colspan="2">A</th>
+    <th>B</th>
+    <th rowspan="2">C</th>
+    <th >D</th>
+    <th style="border: 0px;"></th>
+    <!-- <th>F</th> -->
+</tr>
+<tr>
+    <th rowspan="2">A</th>
+    <th style="border: 0px;"></th>
+    <th style="border: 0px  ;"></th>
+    <!-- <th>D</th> -->
+    <!-- <th>E</th> -->
+    <!-- <th>F</th> -->
+</tr>
+<tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <!-- <th>F</th> -->
+</tr>
+<tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <th>F</th>
+</tr>
+<tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <th>F</th>
+</tr>
+<tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>D</th>
+    <th>E</th>
+    <th>F</th>
+</tr>
+
+
+</table>
+
+
+</center
+
+
+
+
+</body>
+</html>
