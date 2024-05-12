@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* hesding  */
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: saddlebrown; */
+}
+
+/*  card  */
+
+.Card {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  /* height: 700px; */
+  /* background-color: rgb(63, 2, 133); */
+
+}
+
+
+
+/* slider */
+
+.sliding {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  width: 300px;
+  height: 460px;
+  margin-left: 50px;
+  background-color: rgb(92, 179, 12);
+  background-image: url(./img/bgimg.avif);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.sliding:hover
+{
+  .card_user_name h2 
+  {
+    color:rgba(0, 0, 200, 0.3);
+  }
+  .card_user_name h3 
+  {
+    align-self: center;
+    background-color:rgba(50,120, 200, 0.3);
+  }
+}
+
+/* card img */
+
+.card_img {
+align-self: center;
+  margin-top: 30px;
+  align-self: center;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  color: white;
+  aspect-ratio: 2/2;
+  
+}
+
+
+/* name  */
+
+.card_user_name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+/* branch */
+
+.branch {
+  /* margin-left: 15px;    */
+  padding: 0 7px;
+  background-color: blueviolet;
+  border-radius: 20px;
+}
+
+/* star  */
+
+.star {
+  color: yellow;
+}
+
+/* botton */
+
+.button {
+  padding: 10px 15px;
+  background-color: darkblue;
+  color: wheat;
+  border-radius: 14px;
+  transition: 1.2s;
+}
+.button:hover
+{
+background-color: antiquewhite;
+color: rgba(100, 50, 10, 0.8);
+font-size: 20px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Card1
+{
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+
+.sliding1
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  width: 400px;
+  height: 560px;
+  margin-left: 50px;
+  /* background-color: rgb(92, 179, 12); */
+  background-image: url(./img/bgimg.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.card_user_name1
+{
+  font-size: 20px;
+  /* font-weight: bolder; */
+  margin-left: 120px;
+  margin-right: 40px;
+  
+
+  .branch1 
+  {
+   margin-top: 10px; 
+   font-weight: 0px;
+  }
+
+}
