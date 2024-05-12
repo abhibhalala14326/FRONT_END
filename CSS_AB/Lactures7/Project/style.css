@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size:xx-large;
   /* background-color: saddlebrown; */
 }
 
@@ -15,10 +16,8 @@
 
 .Card {
   display: flex;
-  margin-top: 100px;
-  justify-content: space-around;
-  /* height: 700px; */
-  /* background-color: rgb(63, 2, 133); */
+  margin-top: 5px;
+
 
 }
 
@@ -36,7 +35,7 @@
   height: 460px;
   margin-left: 50px;
   background-color: rgb(92, 179, 12);
-  background-image: url(./img/bgimg.avif);
+  background-image: url(./img/bgimg2.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -83,7 +82,7 @@ align-self: center;
 .branch {
   /* margin-left: 15px;    */
   padding: 0 7px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   border-radius: 20px;
 }
 
@@ -143,14 +142,19 @@ main{
 {
   font-size: 20px;
   /* font-weight: bolder; */
-  margin-left: 120px;
+  margin-left: 110px;
   margin-right: 40px;
+  margin-bottom: 50px;
   
 
-  .branch1 
-  {
-   margin-top: 10px; 
-   font-weight: 0px;
-  }
-
+  
+}
+.name1
+{
+  margin-bottom: 30px;
+}
+.branch1 
+{
+ font-size: 15px;
+ color: white;
 }
