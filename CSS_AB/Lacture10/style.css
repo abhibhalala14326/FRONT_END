@@ -1,4 +1,10 @@
 /* box shadow */
+.shadow-main
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 .shadow1
 {
@@ -30,6 +36,13 @@
 
 /* text shadow */
 
+.text
+{
+display: flex;
+justify-content: space-evenly;
+}
+
+
 .text-shadow1
 {
     width: 200px;
@@ -46,7 +59,7 @@ border: 2px solid #9dff00;;
     height: 200px;
 /* text-decoration-line:line-through; */
 /* text-decoration-line:overline; */
-/* text-decoration-line:underline; */
+text-decoration-line:underline;
 /* text-decoration-line:none; */
 border: 2px solid #9dff00;;
 
@@ -58,8 +71,8 @@ border: 2px solid #9dff00;;
 {
     width: 200px;
     height: 200px;
-    /* text-transform: capitalize;
-    text-transform: lowercase;
+    text-transform: capitalize;
+    /* text-transform: lowercase;
     text-transform: uppercase;
     text-transform: unset ; */
     border: 2px solid #9dff00;;
@@ -69,7 +82,7 @@ border: 2px solid #9dff00;;
 {
   width: 200px;
     height: 200px;
-    /* text-wrap: wrap; */
+    text-wrap: wrap;
     border: 2px solid #9dff00;;   
 }
 
@@ -90,4 +103,18 @@ border: 2px solid #9dff00;;
     font-weight: 600;
     font-display:unset;
     color: #9dff00;
+}
+
+/* letter spacing */
+
+.letter
+{
+    letter-spacing: 20px;
+}
+
+/* word-spacing */
+
+.word
+{
+    word-spacing: 50px;
 }
