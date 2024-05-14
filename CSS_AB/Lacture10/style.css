@@ -1,0 +1,93 @@
+/* box shadow */
+
+.shadow1
+{
+    box-shadow: 5px 5px 15px rgba(100, 100, 100, 1.5);
+   height: 100px;
+   width: 100px;
+   background-color: black;
+   
+}
+
+.shadow2
+{
+      box-shadow: 5px 5px 15px rgba(100, 100, 100, 1.5),7px 7px 15px rebeccapurple,9px 9px 1px red ,15px 12px 15px gold,16px 20px 10px 5px green;
+     
+      
+   height: 100px;
+   width: 100px;
+   background-color: black;
+   margin-bottom: 100px;
+}
+
+.shadow3
+{
+    height: 100px;
+    width: 100px;
+    /* background-color: blue; */
+    box-shadow: 2px 2px 2px 2px red inset,4px 4px 4px 4px rgb(76, 0, 255) inset ,6px 6px 6px 6px #9dff00 inset;
+}
+
+/* text shadow */
+
+.text-shadow1
+{
+    width: 200px;
+    height: 200px;
+text-align: center;
+border: 2px solid #9dff00;;
+
+
+
+}
+.text-shadow2
+{
+    width: 200px;
+    height: 200px;
+/* text-decoration-line:line-through; */
+/* text-decoration-line:overline; */
+/* text-decoration-line:underline; */
+/* text-decoration-line:none; */
+border: 2px solid #9dff00;;
+
+
+
+}
+
+.text-shadow3
+{
+    width: 200px;
+    height: 200px;
+    /* text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: unset ; */
+    border: 2px solid #9dff00;;
+}
+
+.text-shadow4
+{
+  width: 200px;
+    height: 200px;
+    /* text-wrap: wrap; */
+    border: 2px solid #9dff00;;   
+}
+
+.text-shadow5
+{
+    width: 200px;
+    height: 200px;
+   text-shadow: 2px 2px 2px  blue;
+    border: 2px solid #9dff00;;
+}
+
+/* font-pops1 */
+
+.font-pops1
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-display:unset;
+    color: #9dff00;
+}
