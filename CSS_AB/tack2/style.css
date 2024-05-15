@@ -15,11 +15,12 @@
   grid-column: 1/4;
   font-size: 30px;
   text-align: center;
-  
+  align-content: center;
   
 }
 
 .item2 {
+  align-content: center;
   background-color: aqua;
   grid-row: 2/4;
   font-size: 30px;
@@ -30,22 +31,27 @@
   grid-column: 2/4;
   font-size: 30px;
   text-align: center;
+  align-content: center;
 }
 .item4 {
   background-color: green;
   font-size: 30px;
   text-align: center;
+  align-content: center;
 }
 .item5 {
  
   background-color: brown;
   font-size: 30px;
   text-align: center;
+  align-content: center;
 }
 .item6
 {
     grid-column:1/4;
 background-color: yellow;
-font-size: 30px;
+font-size: 40px;
 text-align: center;
+align-content: center;
+
 }
