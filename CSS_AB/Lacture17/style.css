@@ -1,0 +1,62 @@
+.mask_img
+{
+    mask-image: url(./img/mask-image.png);
+    mask-repeat: no-repeat;
+    
+}
+.mask
+{
+    mask-image: url(./img/mask-image.png);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+    font-size: 200px;
+   
+}
+
+.filter_img1
+{
+    filter: blur(10px);
+}
+.filter_img2
+{
+    filter: brightness(1110%);
+    
+}
+.filter_img3
+{
+    filter:contrast(500%);
+}
+.filter_img4
+{
+    width: 60%;;
+    filter:drop-shadow(20px 20px 20px red);
+}
+.filter_img5
+{
+    width: 60%;;
+    filter:opacity(0.5);
+}
+.filter_img6
+{
+  
+    filter:grayscale(100%);
+}
+.filter_img7
+{
+   
+
+    filter: invert(100%);
+}
+.filter_img8
+{
+   
+
+    filter: saturate(5);
+}
+.filter_img9
+{
+   
+
+    filter: sepia(50%);
+}
+

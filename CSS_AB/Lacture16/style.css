@@ -1,4 +1,4 @@
-.container{
+/* .container{
     margin-top: 50px;
     padding-left: 150px;
     display: grid;
@@ -152,7 +152,7 @@
 
 .container2{
     position: relative;
-    /* margin-top: 100px; */
+   
     border: 2px solid red;
 }
 
@@ -188,4 +188,128 @@
     left: 50px;
     width: 100px;
     height: 100px;
+} */
+
+.static
+{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+   height: 200px;
+    margin-bottom: 100px;
+}
+.box1
+{
+    position: static;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+.box2
+{
+    position: static;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
+.box3
+{
+    position: static;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+}
+.box4
+{
+    position: static;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.relative
+{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.rbox1
+{
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.rbox2
+{
+    position: relative;
+    left:150px;
+    top: 20px;
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+
+    margin: 0 7px;
+}
+.rbox3
+{
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+.rbox4
+{
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+}
+.absolute
+{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+    height: 200px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.abox1
+{
+ 
+    height: 200px;
+    width: 200px;
+    background-color: goldenrod;
+}
+.abox2
+{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    top: 40px;
+    left: 200px;
+}
+.abox3
+{
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: salmon;
+}
+.abox4
+{
+    /* position: static; */
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
