@@ -1,0 +1,68 @@
+/* a:link
+{
+    color: blueviolet;
+    font-size: 100px;
+    background-color: blue;
+}
+a:hover
+{
+  
+    color: blue;
+    background-color: blueviolet;
+}
+
+a:focus
+{
+    font-size: 2000px !important;
+} 
+a:active
+{
+    background-color: yellowgreen;
+}
+::selection
+{
+    color: blue;
+    background-color: blueviolet;
+}
+
+p::first-letter{
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+p::first-line{
+    color: aqua;
+}*/
+
+h1::before{
+    content: "good boy";
+    background-color: red;
+    position: relative;
+    right: 10px;
+
+
+
+}
+h1::after
+{
+    content: "bed boy";
+    background-color: blue;
+    position: relative;
+    left: 20px;
+}
+
+li::marker
+{
+    font-size: 50px;
+    color: blueviolet;
+    list-style-position: outside;
+}
+
+img{
+    float: left;
+}
+.second
+{
+ float: right;   
+}
