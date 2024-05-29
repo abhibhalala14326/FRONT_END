@@ -53,3 +53,44 @@ left: 0px;
 
 }
 
+.abhi
+{
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+
+}
+.abhi {
+	-webkit-animation:abhi 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+	        animation: abhi 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite;
+
+}
+
+@-webkit-keyframes abhi {
+  0% {
+    color: red;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    color: blue;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes abhi {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+             color: red;
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+             color: red;
+    opacity: 1;
+  }
+}
