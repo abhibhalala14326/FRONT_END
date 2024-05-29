@@ -499,7 +499,7 @@ body {
   justify-content: space-evenly;
   height: 700px;
   transition: 1s;
-  /* padding: 120px; */
+ 
 }
 .bgcolor1:hover {
   background-color: #002450;
@@ -547,7 +547,7 @@ body {
 }
 .lorem2 {
   margin-top: 20px;
-  /* margin-left: 20px; */
+
 }
 
 .vps_button {
@@ -649,7 +649,7 @@ a {
 
 .main_blog {
   display: flex;
-  /* justify-content: space-evenly; */
+  
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -668,7 +668,7 @@ a {
   align-self: flex-start;
   width: 350px;
   height: 230px;
-
+  
   overflow: hidden;
 }
 
@@ -676,10 +676,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  box-shadow: 3px 3px rgb(63, 16, 16,0.4), -3px -3px rgb(63, 16, 16,0.4) ;
 
   width: 349px;
   height: 511px;
-
+overflow: hidden;
   border-radius: 20px;
   transition: 1s;
 }
