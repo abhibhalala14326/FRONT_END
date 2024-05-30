@@ -661,8 +661,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 379px;
-  height: 511px;
+  max-width: 379px;
+  max-height: 511px;
 }
 .img_blog {
   align-self: flex-start;
@@ -676,6 +676,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left: 20px;
   box-shadow: 3px 3px rgb(63, 16, 16,0.4), -3px -3px rgb(63, 16, 16,0.4) ;
 
   width: 349px;
