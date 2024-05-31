@@ -1,0 +1,17 @@
+.img
+{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #000;
+    /* object-fit: cover; */
+
+
+}
+img{
+    height: 300px;
+    width:  300px;
+ /* object-fit: cover;    */
+ /* object-fit: contain;  */
+ /* object-position: top right;   */
+}
