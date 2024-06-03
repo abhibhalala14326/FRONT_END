@@ -8,12 +8,19 @@ body {
   flex-wrap: wrap;
 }
 
+::selection
+{
+  color: blueviolet;
+  background-color:rgba(20, 50, 200, 0.6);
+}
+
+/* navbar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #ffffff;
-    color: wheat;
+  color: wheat;
   padding: 10px;
   position: fixed;
   width: 100%;
@@ -49,7 +56,6 @@ body {
   justify-content: space-around;
   background-color: #007bff;
   align-items: center;
-  /* margin-top: 200px; */
   padding: 400px 0;
   height: 500px;
 }
@@ -110,7 +116,7 @@ body {
   color: white;
 }
 
-/* home   */
+
 
 .icon {
   background-color: black;
@@ -233,7 +239,7 @@ body {
   margin-top: 200px;
   height: 460px;
   width: 100%;
-  
+
   margin-bottom: 100px;
 }
 .Reliability {
@@ -318,7 +324,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+
   width: 310px;
   height: 310px;
 }
@@ -476,7 +482,6 @@ body {
   border-radius: 25px;
   color: white;
   margin-bottom: 50px;
-  /* background-color: #002450; */
   border: none;
   background-color: #007bff;
 }
@@ -487,7 +492,7 @@ body {
   justify-content: space-evenly;
   height: 600px;
   transition: 1s;
-  /* padding: 120px; */
+  
 }
 .bgcolor:hover {
   background-color: #00b6ff;
@@ -499,14 +504,15 @@ body {
   justify-content: space-evenly;
   height: 700px;
   transition: 1s;
- 
 }
 .bgcolor1:hover {
   background-color: #002450;
   color: white;
 }
 
+
 /* VPN SERVICES */
+
 
 .bg_light_white_color {
   display: flex;
@@ -547,7 +553,6 @@ body {
 }
 .lorem2 {
   margin-top: 20px;
-
 }
 
 .vps_button {
@@ -649,7 +654,7 @@ a {
 
 .main_blog {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
   margin-top: 100px;
@@ -668,7 +673,7 @@ a {
   align-self: flex-start;
   width: 350px;
   height: 230px;
-  
+
   overflow: hidden;
 }
 
@@ -677,11 +682,11 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 20px;
-  box-shadow: 3px 3px rgb(63, 16, 16,0.4), -3px -3px rgb(63, 16, 16,0.4) ;
+  box-shadow: 3px 3px 5px 5px rgb(63, 16, 16, 0.4);
 
   width: 349px;
   height: 511px;
-overflow: hidden;
+  overflow: hidden;
   border-radius: 20px;
   transition: 1s;
 }
@@ -705,7 +710,7 @@ overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
+  margin-left: 10px;
   width: 265px;
   height: 155px;
 }
