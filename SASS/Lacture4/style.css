@@ -1,0 +1,14 @@
+.box1, .box4, .box3, .box2 {
+  display: inline-block;
+  margin-left: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+  margin-top: 20px;
+  font-size: 40px;
+  text-shadow: 19px 19px 6px blueviolet;
+}
+
+.box2 {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+@import "main";
+
+.main_box
+{
+    background-color:red;
+    height: 300px;
+    width: 100%;
+}
+
+.box1
+{
+
+    display: inline-block;
+    margin-left: 20px;
+    
+    height: 300px;
+    width: 300px;
+    background-color:$red;
+    margin-top: 20px;
+    font-size: 40px;
+    text-shadow: 19px 19px 6px blueviolet;
+    
+
+}
+
+.box2
+{
+    @extend .box1;
+    background-color:$green;
+}
+
+.box3
+{
+    @extend .box1;
+
+}
+.box4
+{
+    @extend .box1;
+
+}

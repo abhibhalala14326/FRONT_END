@@ -1,0 +1,26 @@
+$bgcolor:orange;
+
+@mixin leval
+{
+     font-size: 30px;
+        text-align: center;
+        position: relative;
+        top: 200px;
+        color: white;
+}
+
+@mixin box1_and_box_5
+{
+      height: 300px;
+    width: 300px;
+}
+@mixin box2_3_4
+{
+    height: 300px;
+    width: 200px;
+}
+
+@mixin footer($color)
+{
+    background-color: $color;
+}

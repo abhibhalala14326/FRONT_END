@@ -1,0 +1,19 @@
+$color12:red;
+
+@mixin text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid $color12;
+  height: 200px;
+  width: 200px;
+  white-space:pre ;
+
+}
+
+.pera {
+  @include text;
+  background-color: green;
+
+}
+
