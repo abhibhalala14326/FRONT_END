@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- script -->
+
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            red: 'rgba(255,0,0,0.3)',
+            blue: 'rgba(2,255,0,0.3)',
+            yellow: 'rgba(255,255,0,0.3)',
+            green: 'rgba(0,255,0,0.3)',
+            purple: 'rgba(255,0,255,0.3)',
+            orange: 'rgba(255,165,0,0.3)',
+            
+          }
+          
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg);">
+  
+<div  class="flex justify-center bg-slate-500">
+
+    <button class=" my-4 text-4xl py-5 px-4 bg-blue text-yellow-100 hover:bg-red hover:text-5xl">Submit</button>
+    </div>
+<div  class="flex justify-center my-5 bg-slate-500">
+
+    <button class="my-4 text-4xl py-5 px-4  bg-green-500 text-yellow-100 hover:bg-gray-950 hover:text-5xl">On</button>
+    </div>
+<div  class="flex justify-center bg-slate-500">
+
+    <button class="my-4 text-4xl py-5 px-4 bg-yellow-400 text-yellow-100 hover:bg-indigo-500 hover:text-5xl">Off</button>
+    </div>
+</body>
+</html>
