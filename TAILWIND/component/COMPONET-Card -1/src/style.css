@@ -3,19 +3,19 @@
 
 .box1
 {
-    @apply border-solid border-2 border-black overflow-hidden h-[300px] w-[300px] ;
+    @apply  overflow-hidden h-[300px] w-[300px] ;
 }
 
 .card
 {
-    @apply h-[500px] w-[300px]  border-solid border-2  border-black  ;
+    @apply h-[500px] w-[300px]  shadow-lg shadow-red-300/50 duration-1000	 ;
 }
 
 
 
 .item_name
 {
-    @apply text-xl font-bold
+    @apply text-xl font-bold mt-10 mb-3;
 }
 
 @tailwind utilities;
