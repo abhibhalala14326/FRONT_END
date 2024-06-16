@@ -588,12 +588,24 @@ video {
   margin-top: 7rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
 
 .h-32 {
   height: 8rem;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-32 {
@@ -603,6 +615,10 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .items-center {
@@ -685,6 +701,11 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
+.bg-rose-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 205 211 / var(--tw-bg-opacity));
+}
+
 .bg-rose-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 164 175 / var(--tw-bg-opacity));
@@ -700,8 +721,44 @@ video {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/img\/img\.jpg\'\)\] {
+  background-image: url('./img/img.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/tree\.jpg\'\)\] {
+  background-image: url('../assets/tree.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .p-5 {
@@ -838,6 +895,18 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .italic {
