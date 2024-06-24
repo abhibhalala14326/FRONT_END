@@ -1,0 +1,63 @@
+/* mobail  */
+
+@media (min-width:320px ) and (max-width:425px){
+  .navbar {
+  background-image: url(./img/slider-img.jpg);
+  background-size: cover;
+  width:625px;
+  height: 571px;
+  background-position: center;
+  background-attachment: fixed;
+  /* overflow: hidden; */
+ position: relative;
+ 
+
+}
+.bg_color0
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2b2b2bc2;
+  z-index: -1;
+}
+.logo
+a {
+display: none;
+
+}
+
+.contact {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 14px;
+  font-weight:0;
+  color: white;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+#p {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 768 ){
+  
+}
+
+
+/* laptop */
+
+@media (min-width: 768px) and (max-width:1024)
+{
+
+}
+

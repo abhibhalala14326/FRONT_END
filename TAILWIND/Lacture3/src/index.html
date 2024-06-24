@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-     <h1 class="text-center  text-4xl dark:bg-lime-500">font size</h1>
+<body class="dark:bg-black dark:text-emerald-500">
+     <h1 class="text-center  text-4xl dark:bg-lime-500 uppercase">font size</h1>
 
   <h1 class="text-xs">
     text-xs	(12px)
@@ -58,7 +58,7 @@
 
      <!--Font Style
   -->
-     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500">font style</h1>
+     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500 uppercase">font style</h1>
 
    <h1 class="italic	text-3xl">
     italic	
@@ -69,7 +69,7 @@
   
      <!-- foni weight -->
 
-     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500">font weight</h1>
+     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500 uppercase">font weight</h1>
 
 
 
@@ -79,7 +79,7 @@
 <p class="font-semibold ...">semibold ...</p>
 <p class="font-bold ">bold ...</p>
 
-     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500">font weight</h1>
+     <h1 class="text-center mt-28 text-4xl dark:bg-lime-500 uppercase">font weight</h1>
 
 
 
@@ -89,7 +89,7 @@
 
 
   <!-- Padding -->
-    <div class="text-3xl font-bold text-black text-center pt-5">PADDING</div>
+    <div class="text-3xl font-bold  text-center pt-5">PADDING</div>
     <section class="flex justify-between p-5">
         <div class="bg-rose-300 w-fit p-10">Padding</div>
         <div class="bg-rose-300 w-fit pt-10">Padding Top</div>
@@ -101,7 +101,7 @@
     </section>
 
     <!-- Margin -->
-    <div class="text-3xl font-bold text-black text-center pt-5">MARGIN</div>
+    <div class="text-3xl font-bold text-center pt-5">MARGIN</div>
     <section class="flex justify-between p-5">
         <div class="bg-yellow-200 w-fit m-10">Margin</div>
         <div class="bg-yellow-200 w-fit mt-10">Margin Top</div>
@@ -113,7 +113,7 @@
     </section>
 
     <!-- Border -->
-    <div class="text-3xl font-bold text-black text-center pt-5">BORDER</div>
+    <div class="text-3xl font-bold  text-center pt-5">BORDER</div>
     <section class="flex justify-between p-5">
         <div class="bg-violet-200 w-32 h-32 border-4 border-blue-800">Border</div>
         <div class="bg-violet-200 w-32 h-32 border-t-4 border-blue-800">Border Top</div>
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Border Radius -->
-    <div class="text-3xl font-bold text-black text-center pt-5">BORDER RADIUS</div>
+    <div class="text-3xl font-bold  text-center pt-5">BORDER RADIUS</div>
     <section class="flex justify-between p-5">
         <div class="bg-green-300 w-32 h-32 rounded-2xl flex items-center justify-center">Border Radius</div>
         <div class="bg-green-300 w-32 h-32 rounded-t-2xl flex items-center justify-center px-5">Border Radius Top</div>
@@ -136,13 +136,50 @@
     </section>
 
     <!-- bg img bg-color -->
-    <div class="text-3xl font-bold text-black text-center pt-5 uppercase">  background-image</div>
+    <div class="text-3xl font-bold  text-center pt-5 uppercase">  background-image</div>
   
  <section class=" w-full bg-[url('./img/img.jpg')] h-[400px]"></section>
     <section class="p-16 bg-rose-200">
         
         <div class="my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni in mollitia, sapien atibus provident, est accusantium quia vitae quasi! Doloremque officia ea aliquam labore minima atque ducimus officiis, culpa dolorem qui aspernatur, dolorum nostrum quos distinctio veritatis quis. Optio quos quod quae sint earum fugit asperiores animi expedita?</div>
     </section>
+
+
+    <!-- filter -->
+    <div class="text-3xl font-bold text-center pt-5 uppercase">  filter</div>
+    <section class="flex justify-evenly mt-5">
+      <div>
+        <img src="./img/img.jpg" alt="" class="h-28 w-28 object-cover blur-none">
+      </div>
+      <div>
+        <img src="./img/img.jpg" alt="" class="h-28 w-28 object-cover blur-sm">
+      </div>
+      <div>
+        <img src="./img/img.jpg" alt="" class="h-28 w-28 object-cover blur-md">
+      </div>
+    </section>
+
+    <!-- backdrop filter -->
+
+     <div class="text-3xl font-bold  text-center pt-5 uppercase">  backdrop filter</div>
+    <section class="flex justify-evenly mt-5">
+      <div class="w-28 h-28 bg-cover "
+      style="background-image: url(./img/img.jpg); ">
+        <p class="backdrop-blur-none  text-center	">img</p>
+      </div>
+     <div class="w-28 bg-cover "
+      style="background-image: url(./img/img.jpg); ">
+        <p class="backdrop-blur-sm text-center	">img</p>
+      </div>
+      <div class="w-28 bg-cover "
+      style="background-image: url(./img/img.jpg); ">
+        <p class="backdrop-blur-md text-center	">img</p>
+      </div>
+    </section>
+
+
+
+
 
 </body>
 </html>
