@@ -21,7 +21,7 @@
 // console.log( "b--" ,b--);
 // console.log( "--b" ,--b);
 
-//assignment operators(=+,-=,*=,/=,**=,%=,==)
+// assignment operators(=+,-=,*=,/=,**=,%=,==)
 
 //  let a=5;
 //  let b=10;
@@ -43,7 +43,7 @@
 //  console.log("a = " , a);
 
 
-//comprison operators
+// comprison operators
 
 // let a=2;
 // let b=10;
@@ -71,7 +71,7 @@
 
 
 
-//conditional statements
+// conditional statements
 
 // let a=1;
 
@@ -94,7 +94,7 @@
 //     }
 
 
-//ternary operators
+// ternary operators
 
 // let a=18;
 

@@ -148,7 +148,7 @@
     let bool = true;
     console.log(`str and num : ${str == num}`);//false
     console.log(`str and bool : ${str == bool}`);//false
-    console.log(`str and str : ${str == str}`);//true
+    console.log(`str and str : ${str != str}`);//false
     console.log(`num and bool : ${num == bool}`);//false
     console.log(`num and str : ${num == str}`);//flase
 }
