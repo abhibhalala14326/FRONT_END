@@ -1,12 +1,12 @@
 // Add two numbers input by the user
  {
-    let number1 = prompt("enter Thr Number")
-    let number2 = prompt("enter Thr Number")
+    // let number1 = prompt("enter Thr Number")
+    // let number2 = prompt("enter Thr Number")
 
-    console.log(`number1: ${number1} number2: ${number2} `);
-    let sum = +number1 + +number2;
+    // console.log(`number1: ${number1} number2: ${number2} `);
+    // let sum = +number1 + +number2;
 
-    console.log(sum);
+    // console.log(sum);
 
  }
 
@@ -171,7 +171,7 @@
 
     b = a * b * c - a + c;  //99
 
-    console.log(`b : ${b}`);//99
+    console.log(`b : ${b}`); //99
 
     a = 2 
     b = 2
@@ -189,22 +189,22 @@
     let a = 10;
     let b = 20;
 
-    a += b;
+   c = a += b;
 
     console.log(`a : ${a}`);//30
 
     a = 10;
     b = 20;
 
-    a = a + b;
+    a *=  b;
 
-    console.log(`a : ${a}`);//30
+    console.log(`a : ${a}`);//200
 
     a = 10;
     b = 2;
 
-    a *= b;
-    console.log(`a : ${a}`);//20
+    a **= b;
+    console.log(`a : ${a}`);
 
 }
 
