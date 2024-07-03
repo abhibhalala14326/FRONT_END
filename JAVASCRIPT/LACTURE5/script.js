@@ -95,7 +95,7 @@
         a = b;
         b = temp;
     }
-
+ 
     if (b >= c) {
         temp = b;
         b = c;
