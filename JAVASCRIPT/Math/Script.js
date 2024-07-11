@@ -13,6 +13,7 @@
 //math methods
 
 {
+
     console.log(Math.ceil(2.6))
     console.log(Math.floor(-2.3))
     console.log(Math.trunc(0.56787654))
