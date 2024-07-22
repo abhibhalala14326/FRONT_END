@@ -1,8 +1,8 @@
 // string methods
 
-// 1. trim (start and end ni spase remove kare)
-// 2. TrimEnd(string ni end ni spase remove kare che)
-// 3. TrimStart(string ni start ni spase remove kare che)
+// ! 1. trim (start and end ni spase remove kare)
+// ! 2. TrimEnd(string ni end ni spase remove kare che)
+// ! 3. TrimStart(string ni start ni spase remove kare che)
 
 
 {
@@ -66,9 +66,13 @@
 // {
 //     let str = 'Abhi bhalala!  ASDFGHJHFDFGHGFFGHGGoHGHHH';
 
-//     str1 = str.includes('Abhi', 1)
+//     str1 = str.includes('Abhi')
+// str2 = str.includes('A' , 1)
+
 
 //     console.log(str1)
+// console.log(str2)
+
 
 
 // }
@@ -83,11 +87,11 @@
 
     let str = " abhishek bhalala  "
 
-    // str1= str.slice(10)
+    // str1= str.slice(5 , 9)
 
     // console.log(str1)
 
-    // str2 = str.slice(1 ,-7)
+    // str2 = str.slice(4 ,-5)
 
     // console.log(str2)
 
@@ -101,7 +105,7 @@
 {
     // let str = " abhishek bhalala  "
 
-    // str1 = str.substring(6 , 18)  //negitive index  lese nai (0)
+    // str1 = str.substring(3 , 18)  //negitive index  lese nai (0)
 
     // console.log(str1)
 }
@@ -145,7 +149,7 @@
 {
     // let str = "  abhishek bhalala    "
     //            0123456789012345678901
-    // let str1 = str.indexOf('h' , 9)
+    // let str1 = str.indexOf('h' ,8)
 
     // console.log(str1)
 

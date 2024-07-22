@@ -11,37 +11,64 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="dark:bg-black dark:text-white">
-    <main class="mr-10 float-end fixed end-0 w-[10%] h-[90%] flex  items-center">
+<body class="dark:bg-black dark:text-white ">
+    <header class="mr-10 float-end absolute right-5 h-[90%] flex z-10 mb-96   items-center">
         <nav
-            class="flex flex-col relative mt-32 gap-10 items-center  justify-evenly text-xl font-bold lg:flex sm:hidden  h-[90%]">
+            class="flex flex-col fixed mt-32 gap-10 items-center  justify-evenly text-xl font-bold lg:flex sm:hidden  h-[90%]">
 
 
             <a href=""
                 class=" relative flex gap-4 group hover:bg-[orange] duration-1000   items-center   rounded-[50%] h-[50px] w-[50px] justify-center border">
-                <i class="fa-solid fa-house text-center  px-3 py-2 duration-200  "></i>
+                <i class="fa-solid fa-house text-center  px-3 py-2  "></i>
 
                 <div
-                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000   flex rounded-l-[26px] rounded-r-[26px] -right-24 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
+                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000 invisible group-hover:visible  flex rounded-l-[26px] rounded-r-[26px] left-0 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
                     
                     <p>HOME</p>
                 </div>
             </a>
             <a href="../ABOUT/index.html"
-                class="flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
+                class=" relative group flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
                 <i class="fa-solid fa-user text-center    "></i>
+
+                <div
+                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000 invisible group-hover:visible  flex rounded-l-[26px] rounded-r-[26px] left-0 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
+                
+                    <p>HOME</p>
+                </div>
             </a>
-            <a href="" class="flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
-                <i class="fa-solid fa-briefcase text-center  px-3 py-2  "></i>
+            <a href="" class="flex relative group gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
+                <i class="fa-solid fa-briefcase text-center  "></i>
+
+                <div
+                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000 invisible group-hover:visible  flex rounded-l-[26px] rounded-r-[26px] left-0 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
+                
+                    <p>HOME</p>
+                </div>
             </a>
-            <a href="" class="flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
+            <a href="" class="relative group flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
                 <i class="fa-regular fa-envelope-open text-center"></i>
+
+
+
+                <div
+                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000 invisible group-hover:visible  flex rounded-l-[26px] rounded-r-[26px] left-0 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
+                
+                    <p>HOME</p>
+                </div>
+
             </a>
-            <a href="" class="flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
+            <a href="" class="relative group flex gap-4 items-center rounded-[50%] h-[50px] w-[50px] justify-center border">
                 <i class="fa-solid fa-comments text-center "></i>
+
+                <div
+                    class="absolute bg-[orange] group-hover:-left-[90px] pr-[125px] pl-4 -z-10 duration-1000 invisible group-hover:visible  flex rounded-l-[26px] rounded-r-[26px] left-0 h-full w-[100px] items-center justify-evenly text-center rounded-xl ">
+                
+                    <p>HOME</p>
+                </div>
             </a>
         </nav>
-    </main>
+    </header>
 
     <div class="flex justify-evenly relative items-center">
         <p class="font-bold text-9xl text-[#ccc0c094]">WORKS</p>
@@ -50,12 +77,12 @@
         </p>
     </div>
 
-    <main class="lg:w-[86%] lg:h-full mt-12 sm:w-full flex justify-evenly items-center">
-        <section class="flex flex-col items-center gap-10 justify-center">
+    <main class="lg:w-full lg:h-full mt-12 sm:w-full flex sm:flex-col justify-evenly items-center">
+        <section class="flex flex-col items-center w-full gap-10 justify-center ">
 
-            <div class="flex justify-evenly items-center">
+            <div class="flex justify-evenly sm:flex-col sm:gap-5 lg:gap-0 lg:flex-row  w-full items-center">
 
-                <div class="w-[25%] h-72 relative border  overflow-hidden group">
+                <div class="w-[300px] h-[300px] relative border  overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -64,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="w-[25%] h-72 border relative duration-1000 overflow-hidden group">
+                <div class="w-[300px] h-[300px] border relative duration-1000 overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -73,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="w-[25%] h-72 border relative duration-1000 overflow-hidden group">
+                <div class="w-[300px] h-[300px] border relative duration-1000 overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -83,8 +110,8 @@
                 </div>
             </div>
 
-            <div class="flex justify-evenly items-center">
-                <div class="w-[25%] h-72 relative border duration-1000 overflow-hidden group">
+            <div class="flex justify-evenly w-full sm:flex-col sm:gap-5 lg:gap-0 lg:flex-row   items-center">
+                <div class="w-[300px] h-[300px] relative border duration-1000 overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -93,7 +120,7 @@
                     </div>
                 </div>
 
-                <div class="w-[25%] h-72 border relative duration-1000 overflow-hidden group">
+                <div class="w-[300px] h-[300px] border relative duration-1000 overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -102,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="w-[25%] h-72 border relative duration-1000 overflow-hidden group">
+                <div class="w-[300px] h-[300px] border relative duration-1000 overflow-hidden group">
                     <a href=""><img src="../img/web1.jpeg" alt=""
                             class="h-full w-full object-cover object-center" /></a>
                     <div
@@ -113,6 +140,8 @@
             </div>
         </section>
     </main>
+
+    <div class="h-[100px]"></div>
 </body>
 
 </html>

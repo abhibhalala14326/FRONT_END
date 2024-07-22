@@ -146,3 +146,54 @@
     
 // }
 // console.log(sum);
+
+
+
+//switch case
+
+{
+    // let areaofshaps = 'square'
+
+    // switch (areaofshaps) {
+    //     case 'circle':
+    //         {
+    //             let r = 4;
+
+    //             console.log(3.14*r*r)
+    //         }
+            
+    //         break;
+
+    //     case  'rectangle' :
+
+    //     {
+    //         let w = 2;
+    //         let l = 2;
+
+    //         console.log(w*l)
+    //     }
+
+    //     case 'square' :
+    //         {
+    //             let a = 2;
+
+    //             console.log(a*a)
+    //        }
+    
+    //     default:
+    //         break;
+    // }
+
+
+}
+
+{
+
+let a = 5;
+
+for (let i = 1; i <= 10; i++) {
+    
+    console.log(`${a} * ${i} => ${a * i}`)
+}
+
+}
