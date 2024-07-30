@@ -13,6 +13,7 @@
 //! math methods
 
 {
+    arr= [1,2,9,12,23]
 
     // console.log(Math.ceil(2.4))
     // console.log(Math.floor(-2.4))
@@ -20,7 +21,8 @@
     // console.log(Math.pow(2, 4))
     // console.log(Math.trunc(Math.random()* 100))
     // console.log(Math.round(9.6))
-    // console.log(Math.max(1,3,4,5,6,8765,123456,9,100))
+    
+    // console.log(Math.max(...arr))
     // console.log(Math.min(1,3,4,5,6,8765,123456,9,100))
     // console.log(Math.sign(-19))
     // console.log(Math.trunc(Math.sqrt(122)))

@@ -1,6 +1,6 @@
   //function
 
- //  basic function
+ //?  basic function
 
  // function name()
  // {
@@ -10,7 +10,7 @@
 
 //  name()
 
-// perametar function 
+//? perametar function 
 
  // function name(a , b)
  // {
@@ -20,7 +20,7 @@
 //  name(4,7);
 
 
-// return function
+//? return function
 
 //  function name(a , b)
 // {
@@ -31,7 +31,7 @@
 
 // console.log(a);
 
-// consturtor
+//? consturtor
 
 
 // let data = new Function("a" , "b" ,"return a*b")
@@ -47,7 +47,7 @@
 
 // data()
 
-// IIFE
+//? IIFE
 
 (function name(a,b,c)
 {
@@ -57,7 +57,7 @@
 
 
 
-// arrow function 
+// ? arrow function 
 
 // let data = (a,b)  =>
 // {
@@ -72,7 +72,7 @@
 
 // !high order function
 
-//! fonction is Object
+//! fonction is Object 
 
 
 function sum()
@@ -95,7 +95,7 @@ sum(112,3,4,4,5,6,7,8,9,9,9,6,5,4,3)
 
 
 
-// rest parametar(...)
+//? rest parametar(...)
 
 // function name(...arge)
 // {
@@ -105,6 +105,29 @@ sum(112,3,4,4,5,6,7,8,9,9,9,6,5,4,3)
 // }
 
 // name(1,2,3,4,5,6)
+
+
+//? call back function
+
+{
+    // function sum(a , b , callback)
+    // {
+
+    //     callback();
+    //     return  a * b;
+    // }
+
+    // console.log(sum(4,10,callback))
+
+
+    // function callback()
+    // {
+    //     console.log('callback function !');
+    // }
+
+
+}
+
 
 //! generator function
 // {

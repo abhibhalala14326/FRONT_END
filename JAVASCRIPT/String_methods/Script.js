@@ -6,26 +6,26 @@
 
 
 {
-    //     let str =  '                            abhi bhalala                                     ';
+        // let str =  '                            abhi bhalala                                     ';
 
-    //     // trim
+        // trim
 
     //    str1 =  str.trim();
 
-    //     console.log(str1)
+        // console.log(str1)
 
     //     // trimEnd
 
-    //     str2 = str.trimEnd()
+        // str2 = str.trimEnd()
 
-    //     console.log(str2);
+        // console.log(str2);
 
     //     // trimStart
 
 
-    //     str3 = str.trimStart()
+        // str3 = str.trimStart()
 
-    //     console.log()
+        // console.log(str3)
 }
 
 
@@ -50,27 +50,27 @@
 
 //6. string.at ()
 
-{
-    //     let str = "   abhi is best    "
+// {
+//         let str = "   abhi is best    "
 
-    //     str1 = str.at(-5) // CharAt() ma  negitive index not posibale but at()  negitive index  posible 
+//         str1 = str.at(5) //  
 
-    //     console.log(str1)
+//         console.log(str1)
 
-}
+// }
 
 
 /*  7. includes(searchString)
      includes(searchString, position)  */
 
 // {
-//     let str = 'Abhi bhalala!  ASDFGHJHFDFGHGFFGHGGoHGHHH';
+    // let str = 'Abhi bhalala!  ASDFGHJHFDFGHGFFGHGGoHGHHH';
+            //    12345678901234567890 
+    // str1 = str.includes('Abhi',3)
+// str2 = str.includes('A' , 17)
 
-//     str1 = str.includes('Abhi')
-// str2 = str.includes('A' , 1)
 
-
-//     console.log(str1)
+    // console.log(str1)
 // console.log(str2)
 
 
@@ -85,13 +85,13 @@
 
 {
 
-    let str = " abhishek bhalala  "
+    // let str = " abhishek bhalala  "
 
-    // str1= str.slice(5 , 9)
+    // str1= str.slice(5 )
 
-    // console.log(str1)
+    // // console.log(str1)
 
-    // str2 = str.slice(4 ,-5)
+    // str2 = str.slice(4 ,-8)
 
     // console.log(str2)
 
@@ -105,7 +105,7 @@
 {
     // let str = " abhishek bhalala  "
 
-    // str1 = str.substring(3 , 18)  //negitive index  lese nai (0)
+    // str1 = str.substring(3 , -18)  //negitive index  lese nai (0)
 
     // console.log(str1)
 }
@@ -113,8 +113,8 @@
 //12.concat()
 
 {
-    // let str1 = " abhishek bhalala  " ;
-    // let str2 = " bhalala  " ;
+    // let str1 = "abhishek bhalala" ;
+    // let str2 = "bhalala" ;
     // let str3 = " " ;
 
 
@@ -132,15 +132,15 @@
 //14. endwith
 
 
-{
-    //     let str = "  abhishek bhalala   ! @#$%%^^ "
-    //                012345678901234567890123456789
-    // str1 = str.startsWith("!" ,21 )
-    // str2 = str.endsWith("!" 19 )
+// {
+//         let str = "  abhishek bhalala   !!@#$%%^^ "
+//                    012345678901234567890123456789
+//     str1 = str.startsWith("!" ,21 )
+//     str2 = str.endsWith("!", 22 )
 
-    // console.log(str1, str2)
+//     console.log(str1, str2)
 
-}
+// }
 
 
 
@@ -161,7 +161,7 @@
     // let str = "  abhishek bhalala   "
 
     // str1 = str.padStart(25 , 0)
-    // str2 = str.padEnd(25 , 0)
+    // str2 = str.padEnd(28 , 'abhi')
 
     // console.log(str1)
     // console.log(str2)
@@ -172,9 +172,9 @@
 //18. repeat 
 
 {
-    // let str = "  abhishek   "
+    // let str = "  abhishek   " + '\n'
 
-    // str1 = str.repeat(5)
+    // str1 = str.repeat(5,)
 
     // console.log(str1)
 
@@ -203,11 +203,11 @@
 
 
 {
-    // let str = "  Abhishek bhalala    "
+    // let str = "  Abhishekbhalala    "
 
 
     // let str1 = str.split(" ")
-    // let str2 = str.split(" " , 4)
+    // let str2 = str.split("" , 4)
 
     // console.log(str1)
     // console.log(str2)
