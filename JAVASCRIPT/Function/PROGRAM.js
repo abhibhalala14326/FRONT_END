@@ -11,94 +11,97 @@
 
 //  Write a program that acts as a simple calculator performing addition, subtraction, multiplication, and division.
 
-let simple = (a, b) => {
-  console.log("addition = >", a + b);
-  console.log("subtraction = >", a - b);
-  console.log("multiplication = >", a * b);
-  console.log("division = >", a / b);
-};
-simple(2, 2);
+// let simple = (a, b) => {
+//   console.log("addition = >", a + b);
+//   console.log("subtraction = >", a - b);
+//   console.log("multiplication = >", a * b);
+//   console.log("division = >", a / b);
+// };
+// simple(2, 2);
 
 // Write a program to find the largest of three numbers.
 
-// let largest = (a ,b ,c) =>
-// {
-//    console.log(Math.max(a,b,c))
-// }
+let largest = (a ,b ,c) =>
+{
+   console.log(Math.max(a,b,c))
+}
 
 // largest(100,4,90)
 
 //  Write a program to find the factorial of a given number
 
-// let factorial1 = (factorial) =>
-//     {
-//     let result = 1;
-//     for(let i = 1; i <=factorial; i++)
-//         {
-//             result =result *i;
-//         }
+let factorial1 = (factorial) =>
+    {
+    let result = 1;
+    for(let i = 1; i <=factorial; i++)
+        {
+            result *= i; 
+        }
 
-//         console.log(result);
+        console.log(result);
 
-//     }
+    }
 
-//     factorial1(5)
+    // factorial1(6)
 
 // Write a program to print the first n terms of the Fibonacci sequence.
 
-// let fibonacci = (fibo) =>
-// {
-//     let a = 0, b = 1, next;
+let fibonacci = (fibo) =>
+{
+    let a = 0, b = 1, next;
 
-//     for(let i = 0 ; i < fibo ; i++)
-//         {
-//             console.log(a)
-//             next = a;
-//             a += b ;
-//             b = next;
+    for(let i = 0 ; i < fibo ; i++)
+        {
+            console.log(a)
+            next = a;
+            a += b ;
+            b = next;
 
-//         }
-// }
+        }
+}
 
-// fibonacci(9)
+fibonacci(9) //0,1,1,2,3,5
 
 // Write a program to reverse a given string
 
-// let reverse =  (str) =>
-// {
-//     let a = "";
+let reverse =  (str) =>
+{
+    let a = "";
 
-//     for (let i = str.length-1 ; i >= 0 ; i--)
-//         {
-//             a += str[i];
-//         }
+    // for (let i = str.length-1 ; i >= 0 ; i--)
+    //     {
+    //         a += str[i];
+    //     }
 
-//         console.log(a);
-//     }
+    //     console.log(a);
+    // }
 
+   a = str.split("").reverse().join("");
+
+    console.log(a)
+}
 // reverse("Abhishek")
 
-// palindrome.
+// ? palindrome.
 
-// function isPalindrome(str) {
-//     let j = str.length - 1
-//     for (let i = 0; i < str.length / 2; i++) {
-//         if (str[i] != str[j]) {
-//             return 'not palindrome' ;
-//         }
-//         j--;
-//     }
-//     return 'palindrome';
-// }
+function isPalindrome(str) {
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] != str[str.length - 1 - i]) 
+          {
+            return 'not palindrome' ;
+        }
+    }
+    return 'palindrome';
+}
 
-// let str1 = "racecar";
-// let str2 = "nitin";
-// let str3 = "Rama";
+let str1 = "avva";
+let str2 = "nitin";
+let str3 = "abhi";
 
 // console.log(isPalindrome(str1));
 // console.log(isPalindrome(str2));
 // console.log(isPalindrome(str3));
-
+// 
 // Write a program to find the sum of the first n natural numbers.\
 
 // let natural = (a) =>
@@ -157,21 +160,22 @@ simple(2, 2);
 
 // {
 
-// let revnumber = () => {
-// let num1 = 123456789;
-// let result = num1.toString()
+let revnumber = () => {
+let num1 = 123456789;
+let result = num1.toString()
 
-// let a = "";
+let a = "";
 
-//     for (let i = result.length-1 ; i >= 0 ; i--)
-//         {
-//             a += result[i];
-//         }
+    for (let i = result.length-1 ; i >= 0 ; i--)
+        {
+            a += result[i];
+        }
 
-//         console.log(a);
-//     }
+        console.log(a);
+    }
 
-//     revnumber()
+
+    // revnumber()
 
 // }
 
@@ -193,25 +197,25 @@ simple(2, 2);
 // Example string: 'the quick brown fox'
 // Expected Output: 'The Quick Brown Fox'
 
-// {
-//     let largest = (str) =>
-//     {
-// let word = str.split(' ')
-// let long = "";
+{
+    let largest = (str) =>
+    {
+let word = str.split(' ')
+let long = "";
 
-// for(let i = 0 ; i< word.length; i++)
+for(let i = 0 ; i< word.length; i++)
 
-//     {
-//         if(word[i].length > long.length)
-//         {
-//             long = word[i];
-//         }
-//     }
-//     console.log(long)
+    {
+        if(word[i].length > long.length)
+        {
+            long = word[i];
+        }
+    }
+    console.log(long)
 
-// }
+}
 // largest("abhi bhalala")
-// }
+}
 
 //  Write a JS function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
 // Example string: 'the quick brown fox'

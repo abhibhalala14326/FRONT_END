@@ -203,13 +203,13 @@
 
 
 {
-    // let str = "  Abhishekbhalala    "
+    let str = "Abhishek bhalala"
 
 
-    // let str1 = str.split(" ")
-    // let str2 = str.split("" , 4)
+    let str1 = str.split(" ")
+    // let str2 = str.split("")
 
-    // console.log(str1)
+    console.log(str1)
     // console.log(str2)
 
 }

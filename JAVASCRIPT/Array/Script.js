@@ -112,13 +112,13 @@ let arr = [11,22,33,4,55,66]
 
 //! filter
 
-// a = arr.filter((ele)=>ele<=50)
-// console.log(a)
+a = arr.filter((ele)=>ele<=10)
+console.log(a)
 
 
 //! find
 
-console.log(arr.join())
+// console.log(arr.join())
 
 // a = arr.find((ele)=>ele>=50)
 
@@ -178,7 +178,7 @@ a  = arr.reduceRight((total, ele) => total+=ele)
 data = [1,2,3,4,5,6,7,8,9,0]
 
 a = data.copyWithin(6,2,4)
-console.log(a)
+// console.log(a)
 
 
 //! at()

@@ -69,27 +69,27 @@
 
 
 //?  apply  and Call
+   
+let user = {
+    PrintToData : function()
+    {
+        return `T-Shirt name : ${this.T_Shirt_name} \nT-Shirt price :${this.price} \nT-Shirt Color : ${this.color} `
+    }
+}
 
-// let user = {
-//     PrintToData : function()
-//     {
-//         return `T-Shirt name : ${this.T_Shirt_name} \nT-Shirt price :${this.price} \nT-Shirt Color : ${this.color} `
-//     }
-// }
+let user1 = {
+    T_Shirt_name:'Plain T-shirt',
+    price : 499,
+    color : 'red',
+}
+let user2 = {
+    T_Shirt_name:'Beyoung Trial Pack',
+    price : 999,
+    color : 'blue',
+}
 
-// let user1 = {
-//     T_Shirt_name:'Plain T-shirt',
-//     price : 499,
-//     color : 'red',
-// }
-// let user2 = {
-//     T_Shirt_name:'Beyoung Trial Pack',
-//     price : 999,
-//     color : 'blue',
-// }
-
-// console.log(user.PrintToData.call(user1))
-// console.log(user.PrintToData.apply(user2)) //argument [] apvanu thai
+console.log(user.PrintToData.call(user1))
+console.log(user.PrintToData.apply(user2)) //argument [] apvanu thai
 
 
 
