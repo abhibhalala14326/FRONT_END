@@ -97,10 +97,12 @@
 //! The other way you can handle an error is by using try/catch block.
 
 // ? try/catch - ex
+
 // let promise = new Promise(function (resolve, reject) {
     //     setTimeout(function () {
     //     reject('Promise resolved')}, 3000); 
     // });
+    
 
  //! async function asyncFunc() {
     //     try {

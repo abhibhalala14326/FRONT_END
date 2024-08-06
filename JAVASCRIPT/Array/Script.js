@@ -1,4 +1,4 @@
-//! Array
+//! Array in javascript   
 
 // let arr = [12,24,23,12,32,12]
 // console.log(arr.join())
@@ -175,9 +175,9 @@ a  = arr.reduceRight((total, ele) => total+=ele)
 //? copyWithin(target, start, end)
 
 
-data = [1,2,3,4,5,6,7,8,9,0]
+// data = [1,2,3,4,5,6,7,8,9,0]
 
-a = data.copyWithin(6,2,4)
+// a = data.copyWithin(6,2,4)
 // console.log(a)
 
 
