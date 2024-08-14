@@ -12,7 +12,7 @@ function celsius() {
     
     input = document.querySelector('.input');
     a = input.value;
-    Result = a * (9 / 5) + 32
+    Result =  a * (9 / 5) + 32
 
     b = document.querySelector('.output');
     b.value = Result
@@ -53,6 +53,8 @@ function Gram() {
 
     Kilomitere = document.querySelector('.main2 ');
     Kilomitere.style.display = "none"
+
+
 
     input2 = document.querySelector('.input2');
     a = (input2.value);

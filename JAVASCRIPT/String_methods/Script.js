@@ -50,6 +50,9 @@
 
 //6. string.at ()
 
+//? The at() method of String values takes an integer value and returns a new String consisting of the single UTF - 16 code unit located at the specified offset.This method allows for positive and negative integers.Negative integers count back from the last string character.
+
+
 // {
 //         let str = "   abhi is best    "
 
@@ -105,7 +108,7 @@
 {
     // let str = " abhishek bhalala  "
 
-    // str1 = str.substring(3 , -18)  //negitive index  lese nai (0)
+    // str1 = str.substring(3 , -18)  //negitive index  lagse nai (0)
 
     // console.log(str1)
 }
