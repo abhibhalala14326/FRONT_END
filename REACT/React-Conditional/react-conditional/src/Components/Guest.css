@@ -1,0 +1,28 @@
+.Guest
+{
+  padding: 10px 40px;
+  border: 1px solid #000;
+}
+
+.Chai-button, .Coffee-button
+{
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #000;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: #0000003a;
+
+}
+
+.main
+{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
