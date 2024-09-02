@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Guest.css";
+import img1 from "../assets/Chai.jpg"
 
 const Guest = () => {
   return <></>;
@@ -38,25 +39,33 @@ function Recipe({ drinkers }) {
         </button>
       </section>
 
+      <h1 className="text-center uppercase text-2xl relative left-8 mb-5  w-full">
+        for {value} person
+      </h1>
+
       <section className="chai flex justify-around">
         <section className="Chai-show">
-          <h1 className="text-4xl bg-black text-white text-center">Chai</h1>
+          <h1 className="text-4xl bg-black text-white text-center w-full">
+            Chai
+          </h1>
           <ol>
             <li>Boil {value} cups of water.</li>
             <li>
               Add {value} spoons of tea and {0.5 * value} spoons of spice.
             </li>
-            <li>Add {value} cups of milk to boil and sugar to taste.</li>
+            <li>Add {0.5 * value} cups of milk to boil and sugar to taste.</li>
           </ol>
+          <img src={img1} alt=""  className="w-56 h-53" />
         </section>
         <section className="Chai-show">
           <h1 className="text-4xl bg-black text-white text-center">Coffee</h1>
           <ol>
             <li>Boil {value1} cups of water.</li>
             <li>
-              Add {0.9 * value1} spoons of tea and {1.5 * value1} spoons of spice.
+              Add {0.9 * value1} spoons of tea and {1.5 * value1} spoons of
+              spice.
             </li>
-            <li>Add {value1} cups of milk to boil and sugar to taste.</li>
+            <li>Add {0.5 * value1} cups of milk to boil and sugar to taste.</li>
           </ol>
         </section>
       </section>

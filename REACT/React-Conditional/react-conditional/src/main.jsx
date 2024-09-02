@@ -4,9 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import PackingList from './Components/Tack.jsx'
 import Guest from './Components/Guest.jsx'
-import Guestchai from "./Components/Chai.jsx";
-import {Coffee} from './Components/Guest.jsx'
-import { Coffee1 } from './Components/Chai.jsx'
+import { Coffee } from './Components/Guest.jsx'
 
 
 
