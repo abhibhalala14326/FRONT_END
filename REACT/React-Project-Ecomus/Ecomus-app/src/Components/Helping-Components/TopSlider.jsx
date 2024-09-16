@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from "./TopSilder.module.css";
+import styles from "../../css/TopSilder.module.css";
+
 import "remixicon/fonts/remixicon.css";
 
 function SimpleSlider() {
@@ -28,7 +29,7 @@ function SimpleSlider() {
             <a href="" className="text-[green] relative left-4">
               Shop Now
               <i className="ri-arrow-right-up-line ml-1 text-[16px] text-white"></i>
-              <p className={styles.Slideroutline2}></p>
+              <p className={styles.Slideroutline}></p>
             </a>
           </div>
         </div>

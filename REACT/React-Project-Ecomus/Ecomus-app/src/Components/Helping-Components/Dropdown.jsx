@@ -1,7 +1,7 @@
 import React from 'react'
 import "remixicon/fonts/remixicon.css";
-import Eur from "../assets/european-union.png";
-import styles from "./Dropdown.module.css"
+import Eur from "../../assets/european-union.png";
+import styles from "../../css/Dropdown.module.css";
 // import { document } from 'postcss';
 
 const Dropdown = (props) => {

@@ -7,10 +7,26 @@ export default {
 
   ],
   theme: {
+
+   
+
+    
     extend: {},
   },
+// theme:{
+//   screens: {
+//     'mobail': '320px',
+//     // => @media (min-width: 320px) { ... }
+//   },fontFamily:
+//   {
+//       "sidebar": "Albert Sans",
+
+//   },
+// },
+
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    // require('tailwindcss/defaultTheme')
   ],
  
 }

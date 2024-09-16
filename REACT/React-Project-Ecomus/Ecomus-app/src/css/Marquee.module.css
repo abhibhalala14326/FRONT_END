@@ -1,0 +1,14 @@
+.Marquee > div
+{
+  animation: rightToLeft 10000ms linear infinite;
+
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

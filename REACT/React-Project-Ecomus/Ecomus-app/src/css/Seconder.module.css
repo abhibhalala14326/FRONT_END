@@ -1,0 +1,129 @@
+
+
+.Main {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Collection {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.offer {
+  font-size: 20px;
+  text-transform: uppercase;
+  width: auto;
+}
+.heding {
+  /* height: 300px; */
+  font-size: 70px;
+  font-weight: 500;
+  width: 40vw;
+}
+
+@media only screen and  (max-width:600px) {
+  
+  .heding{
+    font-size: 50px;
+  width: 60vw;
+
+  }
+
+
+.Main {
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+}
+
+@media only screen and  (max-width:900px) {
+
+.Main {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+  .heding{
+    font-size: 50px;
+  width: 60vw;
+
+  }
+
+}
+
+@media only screen and  (max-width:400px) {
+
+.Main {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+  .heding{
+    font-size: 30px;
+  width: 60vw;
+
+  }
+
+  .offer {
+  font-size: 15px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.Collection {
+  margin-left: 10px;
+
+}
+}
+
+@media only screen and  (max-width:600px) {
+
+.Main {
+ height: 60vh;
+}
+
+
+  .heding{
+    font-size: 30px;
+  width: 50vw;
+
+  }
+
+  .offer {
+  font-size: 15px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.Collection {
+  margin-left: 10px;
+
+}
+}

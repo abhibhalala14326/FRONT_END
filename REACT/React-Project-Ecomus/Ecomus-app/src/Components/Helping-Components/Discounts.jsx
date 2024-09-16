@@ -1,0 +1,25 @@
+import React from 'react'
+import styles from "../../css/Discounts.module.css";
+
+const Discounts = () => {
+  return (
+    <>
+      <div className="flex justify-evenly items-center h-[100vh] ">
+        <div className={styles.discounts}>
+          <div className=" h-full flex ml-14 items-center text-white">
+            <div>
+              <p className="text-[14px] font-bold">SALE UP TO 30% OFF TODAY</p>
+              <h1 className="text-[42px] font-bold">Best Deals Discounts</h1>
+              <p className="text-xl">Fast wireless charging on-the-go.</p>
+              <button className={styles.btnShine}>
+                <span>Shop Collection</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Discounts
