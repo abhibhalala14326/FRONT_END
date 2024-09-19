@@ -9,7 +9,6 @@
 .btnShine {
   position: relative;
   margin: 0;
-  padding: 10px 15px;
   outline: none;
   text-decoration: none;
   display: flex;
@@ -27,20 +26,25 @@
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   margin-top: 30px;
+  width: 200px;
+
+  
 }
 
-button span {
+.btnShine span {
   color: #164ca7;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.7px;
+  
+ 
 }
 
-button:hover {
+.btnShine:hover {
   animation: rotate624 0.7s ease-in-out both;
 }
 
-button:hover span {
+.btnShine:hover span {
   animation: storm1261 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }

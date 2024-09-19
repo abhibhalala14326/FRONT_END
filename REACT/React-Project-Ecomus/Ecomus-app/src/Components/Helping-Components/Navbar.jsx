@@ -10,7 +10,7 @@ import Navsidebar from "../Helping-Components/Navsidebar.jsx";
 
 const Navbartop = () => {
   return (
-    <div>
+    <>
       <header>
         <nav className="w-full bg-black text-white flex justify-around items-center py-2">
           <div className="lg:flex gap-5 sm:hidden min-[320px]:hidden ">
@@ -23,7 +23,7 @@ const Navbartop = () => {
           </div>
         </nav>
       </header>
-    </div>
+    </>
   );
 };
 

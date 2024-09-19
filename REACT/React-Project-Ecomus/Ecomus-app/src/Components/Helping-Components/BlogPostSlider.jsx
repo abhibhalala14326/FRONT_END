@@ -1,13 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import Item from "./Item";
+import BlogPost from "./BlogPost";
 
-function ItemSlider() {
+function BlogPostSlider() {
   var settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
@@ -23,7 +23,7 @@ function ItemSlider() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -38,16 +38,18 @@ function ItemSlider() {
     ],
   };
   return (
-    <div className="flex justify-center  ml-5">
-      <div className="slider-container  overflow-hidden w-[95%]">
+    <div className="flex justify-center h-auto pl-4 overflow-hidden">
+      <div className="slider-container w-[98%] ">
         <Slider {...settings}>
-          <Item />
-          <Item />
-          <Item />
+          <BlogPost />
+          <BlogPost />
+          <BlogPost />
+          <BlogPost />
+          <BlogPost />
         </Slider>
       </div>
     </div>
   );
 }
 
-export default ItemSlider;
+export default BlogPostSlider;

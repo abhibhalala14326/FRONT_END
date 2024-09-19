@@ -6,8 +6,8 @@ import img1 from "../../assets/electronic-1.jpg";
 const Category = () => {
   return (
     <>
-      <div className="w-full flex overflow-hidden ">
-        <div className="sm:w-[50vw] sm:h-[45vh] w-full  h-[60vh]  relative flex justify-center items-center  overflow-hidden duration-1000">
+      <div className="w-full flex overflow-hidden h-auto">
+        <div className="sm:w-[50vw] sm:h-[55vh] w-full  h-[90vh]  relative flex justify-center items-center  overflow-hidden duration-1000">
           <img
             src={img1}
             alt=""

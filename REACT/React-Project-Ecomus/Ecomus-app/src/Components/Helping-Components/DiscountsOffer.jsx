@@ -6,7 +6,7 @@ const DiscountsOffer = () => {
     <>
       <main className="flex justify-around items-center  h-auto  w-[100%] mt-12 ">
         <div className="flex lg:flex-row justify-between items-center bg-[#93f859] flex-col w-[90%]">
-          <section className="overflow-hidden lg:w-[45%] w-full flex items-center justify-center h-[70vh]">
+          <section className="overflow-hidden lg:w-[45%] w-full flex items-center justify-center h-[100vh]">
             <img
               src={img}
               alt="collection"

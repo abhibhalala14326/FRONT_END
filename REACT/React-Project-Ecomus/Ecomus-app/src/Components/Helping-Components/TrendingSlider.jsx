@@ -56,7 +56,7 @@ function TrendingSlider() {
       <div className="w-full flex  flex-col gap-10 h-full mt-10  overflow-hidden">
         <TItle heding={"Trending Products"} />
         <div className="w-full flex justify-center ">
-          <div className="slider-container flex  items-center justify-center w-[90%] ">
+          <div className="slider-container    w-[90%] ">
             <Slider {...settings}>
               <TrendingSection />
               <TrendingSection />

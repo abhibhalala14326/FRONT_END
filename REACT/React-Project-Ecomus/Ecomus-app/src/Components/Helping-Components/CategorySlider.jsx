@@ -48,10 +48,10 @@ function CategorySlider() {
   };
   return (
     <>
-      <div className="flex flex-col w-full h-[75vh] items-start mt-10 justify-center overflow-hidden">
+      <div className="flex flex-col w-full h-auto items-start mt-10 justify-center overflow-hidden">
         <TItle heding={"Shop by category"} />
 
-        <div className="flex flex-col w-full h-[100vh]  items-center justify-evenly ">
+        <div className="flex flex-col w-full h-[70vh]  items-center justify-evenly ">
           <div className="slider-container flex justify-center w-[95%]  flex-col  ">
             <Slider {...settings}>
 

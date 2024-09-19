@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  height: 100vh;
 }
 
 .offer {
@@ -24,10 +25,9 @@
   width: auto;
 }
 .heding {
-  /* height: 300px; */
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 500;
-  width: 40vw;
+  width: 50vw;
 }
 
 @media only screen and  (max-width:600px) {
@@ -54,9 +54,10 @@
 @media only screen and  (max-width:900px) {
 
 .Main {
+  margin-top: 20px;
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
