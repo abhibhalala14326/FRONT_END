@@ -18,26 +18,27 @@ import Shipping from '../Helping-Components/Shipping.jsx';
 
 
 
-function App() {
+function Home() {
 
   return (
     <>
-      <Navbartop />
-      <Navbar1 />
-      <SliderOffer />
-      <Marquee />
-      <CategorySlider />
-      <Discounts />
-      <DiscountsOffer/>
-      <TrendingSlider/>
-      <ItemSlider/>
-      <HappyClientsSlider/>
-      <BlogPostSlider/>
-      <Shipping/>
-      <Footer/>
-      
+      <div className='overflow-hidden'>
+        <Navbartop />
+        <Navbar1 />
+        <SliderOffer />
+        <Marquee />
+        <CategorySlider />
+        <Discounts />
+        <DiscountsOffer />
+        <TrendingSlider />
+        <ItemSlider />
+        <HappyClientsSlider />
+        <BlogPostSlider />
+        <Shipping />
+        <Footer />
+      </div>
     </>
   );
 }
 
-export default App
+export default Home

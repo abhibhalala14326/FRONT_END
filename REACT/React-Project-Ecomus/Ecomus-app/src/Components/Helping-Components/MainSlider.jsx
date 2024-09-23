@@ -22,7 +22,7 @@ const MainSlider = ({ OfferName, title, button, bgimg }) => {
                 <p className={styles.heding}>{title}</p>
                 <a
                   href=""
-                  className="relative cursor-pointer sm:w-[265px]  min-[320px]:w-[190px]     flex item-center justify-evenly  text-center     min-[320px]:text-[12px]  opacity-90 px-10 py-4 hover:opacity-100 rounded-[50px] font-[600] sm:text-xl transition-opacity p-[2px] bg-black overflow-hidden bg-gradient-to-t from-[black] to-[#00000065] active:scale-95"
+                  className="relative cursor-pointer w-[265px] max-[425px]:w-[150px]  max-[425px]:p-0   max-[425px]:py-3 max-[425px]:pl-4   flex item-center justify-evenly  text-center     min-[320px]:text-[12px]  opacity-90 px-10 py-4 hover:opacity-100 rounded-[50px] font-[600] sm:text-xl transition-opacity p-[2px] bg-black overflow-hidden bg-gradient-to-t from-[black] to-[#00000065] active:scale-95"
                 >
                   <span className="w-full h-full flex items-center gap-2 text-center   bg-[black] text-white rounded-[50px] bg-gradient-to-t from-[black] to-[#00000065]">
                     {button}

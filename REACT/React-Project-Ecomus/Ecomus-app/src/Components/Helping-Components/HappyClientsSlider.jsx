@@ -48,7 +48,7 @@ const HappyClientsSlider = () => {
     ],
   };
   return (
-    <div className="w-full overflow-hidden bg-[#f5f5f5] py-14">
+    <div className="w-full overflow-hidden mt-10 bg-[#f5f5f5] py-14">
       <div className="flex flex-col gap-4 mb-7 items-center ">
         <p className="sm:text-[42px] text-[30px]">Happy Clients</p>
         <p className="text-[16px] sm:w-full text-center w-[70%]">

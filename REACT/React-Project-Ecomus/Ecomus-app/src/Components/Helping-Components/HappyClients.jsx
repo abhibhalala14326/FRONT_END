@@ -8,7 +8,7 @@ import img from "../../assets/electronic-16.jpg";
 const HappyClients = () => {
   return (
     <>
-        <div className="w-[90%] mx-auto bg-card border h-[400px] bg-white flex flex-col justify-center border-border rounded-lg shadow-md p-4">
+        <div className="w-[90%] mx-auto  bg-card border h-[400px] bg-white flex flex-col justify-center border-border rounded-lg shadow-md p-4">
         <div className="flex items-center mb-2">
           <span className="text-green-500 flex gap-1 text-[17px]">
             <IoStar />

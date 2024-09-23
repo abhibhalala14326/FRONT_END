@@ -11,12 +11,28 @@ import img4 from "../../assets/img-4.png";
 import visa from "../../assets/visa.png";
 
 
-import styles from "../../css/Dropdown.module.css";
-
-
 import logo from "../../assets/logo-white.svg";
 
 export default function Footer() {
+  const Help = [
+    { name: "Privacy Policy", href: "#" },
+    { name: "Returns + Exchanges", href: "#" },
+    { name: "Shipping", href: "#" },
+    { name: "Terms & Conditions", href: "#" },
+    { name: "FAQ's", href: "#" },
+    { name: "Compare", href: "#" },
+    { name: "My Wishlist", href: "#" },
+  ];
+
+  const aboutLinks = [
+    { name: "Our Story", href: "#" },
+    { name: "Visit Our Store", href: "#" },
+    { name: "Contact Us", href: "#" },
+    { name: "Account", href: "#" },
+  ];
+
+  const images = [visa, img1, img2, img3, img4];
+
   return (
     <footer className="bg-black text-white flex  h-auto   items-center flex-col p-8">
       <div className="container mx-auto flex flex-col md:flex-row h-full ">
@@ -57,62 +73,16 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="mb-3 text-[18px]">Help</h3>
             <ul className="list-none flex flex-col gap-1 text-[14px] duration-1000 text-[#a1a1a1]">
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Returns + Exchanges
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Shipping
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  FAQ's
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Compare
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  My Wishlist
-                </a>
-              </li>
+              {Help.map((link, id) => (
+                <li key={id}>
+                  <a
+                    href={link.href}
+                    className="text-muted-foreground hover:text-[#93f859]"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -121,38 +91,16 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="text-[18px]">About us</h3>
             <ul className="list-none flex flex-col gap-3 text-[14px] mt-2 text-[#a1a1a1]">
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Our Story
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Visit Our Store
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-[#93f859]"
-                >
-                  Account
-                </a>
-              </li>
+              {aboutLinks.map((link, id) => (
+                <li key={id}>
+                  <a
+                    href={link.href}
+                    className="text-muted-foreground hover:text-[#93f859]"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="mb-6 md:mb-0 flex flex-col lg:w-[40%]  w-full gap-5">
@@ -183,6 +131,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="h-[1px] bg-white w-[80%] mt-10"></p>
+      
       {/* devloper name */}
 
       <div className="flex sm:flex-row flex-col items-center gap-3 sm:gap-0 sm:justify-between w-full py-6">
@@ -190,11 +139,9 @@ export default function Footer() {
           © 2024 Ecomus Store. All Rights Reserved
         </p>
         <div className="flex gap-2">
-          <img src={visa} alt="" />
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-          <img src={img4} alt="" />
+          {images.map((imgSrc, id) => (
+            <img key={id} src={imgSrc} alt={`image-${id}`} />
+          ))}
         </div>
       </div>
     </footer>

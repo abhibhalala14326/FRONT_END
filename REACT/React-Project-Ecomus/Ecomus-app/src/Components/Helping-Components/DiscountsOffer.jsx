@@ -18,7 +18,7 @@ const DiscountsOffer = () => {
             <h1 className="text-[52px] max-[800px]:text-[40px] text-nowrap max-[600px]:text-[40px] font-[500] ">
               60% Discount
             </h1>
-            <p className="text-[16px] w-full  max-[600px]:text-[16px] text-[#545454]">
+            <p className="text-[16px] w-[80vw]  max-[600px]:text-[16px] text-[#545454]">
               Find the latest and greatest gadgets to enhance your electronic
               devices.
             </p>
