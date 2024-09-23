@@ -109,7 +109,7 @@ export default function FooterWhite() {
               placeholder="Enter your email..."
               className="border border-muted rounded-l-lg p-2 bg-[#bda6a628] w-full h-12"
             />
-            <button className="bg-primary right-[3%] py-2 px-5 rounded-lg absolute top-[10%] bg-white hover:bg-primary/80">
+            <button className="bg-primary right-[3%] py-2 px-5 rounded-lg absolute top-[10%] bg-white ">
               Subscribe
             </button>
           </div>
