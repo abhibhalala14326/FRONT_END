@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Records</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Read Records</h1>
+
+        <!-- Search and Button Controls -->
+        <div class="search-controls">
+            <input type="text" placeholder="Type a name..." class="input-field">
+            <button class="btn btn-search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-delete">Delete Selected</button>
+            <button class="btn btn-export">Export CSV</button>
+            <button class="btn btn-create">Create Record</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-container">
+            <table class="record-table">
+                <thead>
+                    <tr>
+                        <!-- <th><input type="checkbox"></th> -->
+                         <th>Select</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Pillow</td>
+                        <td>Sleeping well is important.</td>
+                        <td>$8.99</td>
+                        <td>Personal</td>
+                        <td class="btn-dle-edit">
+                            <button class="btn btn-edit"><i class="fa-solid fa-pen-to-square"></i>Edit</button>
+                            <button class="btn btn-delete"><i class="fa-solid fa-trash"></i>Delete</button>
+                        </td>
+                    </tr>
+                    <!-- More rows here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-controls">
+            <div class="page-buttons">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <!-- Page Navigation Input -->
+            <div class="page-nav">
+                <input type="text" placeholder="Type page number..." class="input-field">
+                <button class="btn btn-go">Go</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

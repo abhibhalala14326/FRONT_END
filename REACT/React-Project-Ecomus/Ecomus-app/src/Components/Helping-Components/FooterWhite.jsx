@@ -47,7 +47,7 @@ export default function FooterWhite() {
           <img src={logo} alt="logo" className="mb-4 w-[150px]" />
           <p>Address: 1234 Fashion Street, Suite 567 New York, NY 10001</p>
           <p className="flex gap-1">
-            Email:{" "}
+            Email:
             <a href="mailto:info@fashionshop.com">info@fashionshop.com</a>
           </p>
           <p>
@@ -109,7 +109,7 @@ export default function FooterWhite() {
               placeholder="Enter your email..."
               className="border border-muted rounded-l-lg p-2 bg-[#bda6a628] w-full h-12"
             />
-            <button className="bg-primary right-[3%] py-2 px-5 rounded-lg absolute top-[10%] bg-white ">
+            <button className=" right-[3%] py-2 px-5 rounded-lg absolute top-[10%] bg-black text-white ">
               Subscribe
             </button>
           </div>

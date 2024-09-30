@@ -2,8 +2,8 @@ import React from 'react'
 
 const TItle = ({heding}) => {
   return (
-    <div>
-      <h1 className="text-2xl mb-5  ml-16 font-[500] sm:text-3xl">{heding}</h1>
+    <div className='relative'>
+      <h1 className="text-2xl mb-5   font-[500] sm:text-4xl">{heding}</h1>
     </div>
   );
 }

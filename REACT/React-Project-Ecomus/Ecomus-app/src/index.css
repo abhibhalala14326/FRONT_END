@@ -16,8 +16,39 @@
   overflow-y: scroll;
 }
 
-.slick-next:after {
+
+
+.CategorySlider .slider-container .slick-dots {
   position: absolute;
-  left: 10vw;
-  color: red;
+  /* top: ; */
+  bottom: 113%;
+  left: 40%;
+  border: 2px solide black;
+}
+
+.CategorySlider .slider-container .slick-dots .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.CategorySlider .slider-container .slick-dots li button:focus {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .CategorySlider .slider-container .slick-dots {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+}
 }

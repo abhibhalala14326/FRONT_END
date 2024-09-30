@@ -14,7 +14,7 @@ function CategorySlider() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
           dots: true,
@@ -23,7 +23,7 @@ function CategorySlider() {
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
           dots: true,
@@ -48,11 +48,11 @@ function CategorySlider() {
   };
   return (
     <>
-      <div className="flex flex-col w-full h-auto items-start mt-10 justify-center overflow-hidden">
+      <div className="flex flex-col w-full h-auto items-start mt-10 justify-center relative py-10  ">
         <TItle heding={"Shop by category"} />
 
-        <div className="flex flex-col w-full h-[70vh]  items-center justify-evenly ">
-          <div className="slider-container flex justify-center w-[95%]  flex-col  ">
+        <div className="CategorySlider flex flex-col w-full h-auto  items-center justify-evenly static ">
+          <div className="slider-container flex justify-center w-[95%]  flex-col py-4  ">
             <Slider {...settings}>
 
               <Category />

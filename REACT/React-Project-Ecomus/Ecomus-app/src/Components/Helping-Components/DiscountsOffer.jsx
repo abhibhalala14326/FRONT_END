@@ -1,61 +1,53 @@
-import React from 'react'
-import img from ".././../assets/collection-72.jpg";
+import React from "react";
+import img from "../../assets/collection-72.jpg";
 
 const DiscountsOffer = () => {
   return (
-    <>
-      <main className="flex justify-around items-center  h-auto  w-[100%] mt-12 ">
-        <div className="flex lg:flex-row justify-between items-center bg-[#93f859] flex-col w-[90%]">
-          <section className="overflow-hidden lg:w-[45%] w-full flex items-center justify-center h-[100vh]">
-            <img
-              src={img}
-              alt="collection"
-              className="w-[100%] h-full object-cover object-center"
-            />
-          </section>
-          <section className="flex flex-col w-[45%]  max-[1024px]:items-center py-10   gap-4 bg-[#93f859]  ">
-            <p className="capitalize max-[600px]:text-[17px] text-nowrap">ULTIMATE APPLE ACCESSORY.</p>
-            <h1 className="text-[52px] max-[800px]:text-[40px] text-nowrap max-[600px]:text-[40px] font-[500] ">
-              60% Discount
-            </h1>
-            <p className="text-[16px] w-[80vw]  max-[600px]:text-[16px] text-[#545454]">
-              Find the latest and greatest gadgets to enhance your electronic
-              devices.
-            </p>
-            <p className="text-[16px] text-black">
-              Hungry up !{" "}
-              <span className="text-[#1f12126e]">Deals end in :</span>
-            </p>
+    <main className="flex justify-center items-center w-full mt-12 px-4">
+      <div className="flex flex-col lg:flex-row justify-between items-center bg-[#93f859] w-full max-w-[90%] rounded-lg">
+        {/* Image Section */}
+        <section className="overflow-hidden lg:w-[45%] w-full h-full flex items-center  justify-center ">
+          <img
+            src={img}
+            alt="collection"
+            className=" lg:h-[80vh] object-cover rounded-lg"
+          />
+        </section>
 
-            <div className="flex  gap-5">
-              <div className=" bg-white  w-[50px] h-[60px] text-black flex flex-col items-center justify-center text-[18px]">
-                <p>92</p>
-                <p>day</p>
-              </div>
-              <div className=" bg-white  w-[50px] h-[60px] text-black flex flex-col items-center justify-center text-[18px]">
-                <p>92</p>
-                <p>day</p>
-              </div>
-              <div className=" bg-white  w-[50px] h-[60px] text-black flex flex-col items-center justify-center text-[18px]">
-                <p>92</p>
-                <p>day</p>
-              </div>
-              <div className=" bg-white  w-[50px] h-[60px] text-black flex flex-col items-center justify-center text-[18px]">
-                <p>92</p>
-                <p>day</p>
-              </div>
-            </div>
+        {/* Text & Offer Section */}
+        <section className="flex flex-col items-start lg:items-start w-full lg:w-[45%] py-10 px-6 gap-4 bg-[#93f859]">
+          <p className="capitalize text-[18px] sm:text-[20px] ">
+            Ultimate Apple Accessory
+          </p>
+          <h1 className="text-[30px] sm:text-[52px] font-semibold">60% Discount</h1>
+          <p className="sm:text-[16px] text-sm text-[#545454]">
+            Find the latest and greatest gadgets to enhance your electronic
+            devices.
+          </p>
+          <p className="text-[16px] text-black">
+            Hurry up! <span className="text-[#1f12126e]">Deals end in:</span>
+          </p>
 
-            <button className="px-5 font-bold py-2 w-40 rounded-3xl  bg-black text-white  ">
-              shop now
-            </button>
-          </section>
-        </div>
-      </main>
-    </>
+          {/* Countdown Timer */}
+          <div className="flex gap-2">
+            {["days", "hours", "mins", "secs"].map((unit, index) => (
+              <div
+                key={index}
+                className="bg-white w-[50px] h-[60px] flex flex-col items-center justify-center text-black text-[18px] font-bold"
+              >
+                <p>92</p>
+                <p className="text-[14px]">{unit}</p>
+              </div>
+            ))}
+          </div>
+
+          <button className="mt-6 px-5 py-3 font-bold w-40 rounded-3xl  bg-black text-white">
+            Shop Now
+          </button>
+        </section>
+      </div>
+    </main>
   );
-}
+};
 
-
-
-export default DiscountsOffer
+export default DiscountsOffer;

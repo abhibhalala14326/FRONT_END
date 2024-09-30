@@ -1,5 +1,3 @@
-import Navbartop from '../Helping-Components/Navbar.jsx'
-import { Navbar1 } from '../Helping-Components/Navbar.jsx';
 import SliderOffer from '../Helping-Components/Slider.jsx';
 import Marquee from '../Helping-Components/Marquee.jsx';
 import CategorySlider from '../Helping-Components/CategorySlider.jsx';
@@ -8,10 +6,10 @@ import DiscountsOffer from '../Helping-Components/DiscountsOffer.jsx';
 import TrendingSlider from '../Helping-Components/TrendingSlider.jsx';
 import ItemSlider from '../Helping-Components/ItemSlider.jsx'
 import HappyClientsSlider from '../Helping-Components/HappyClientsSlider.jsx';
-import BlogPost from '../Helping-Components/BlogPost.jsx';
 import BlogPostSlider from '../Helping-Components/BlogPostSlider.jsx';
 import Footer from '../Helping-Components/Footer.jsx';
 import Shipping from '../Helping-Components/Shipping.jsx';
+import Navbartop from '../Helping-Components/NavbarTop.jsx';
 
 
 
@@ -22,9 +20,9 @@ function Home() {
 
   return (
     <>
-      <div className='overflow-hidden'>
-        <Navbartop />
-        <Navbar1 />
+      {/* <Navbartop /> */}
+
+      <div className="overflow-hidden px-4">
         <SliderOffer />
         <Marquee />
         <CategorySlider />

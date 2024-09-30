@@ -2,13 +2,13 @@ import React from 'react'
 import ProductsTopNaviget from '../Helping-Components/ProductsTopNaviget'
 import ProdutcsItem from '../Helping-Components/ProdutcsItem'
 
-const Produtcs = () => {
+const Products = () => {
   return (
     <div>
-      <ProductsTopNaviget/>
-      <ProdutcsItem/>
+      <ProductsTopNaviget />
+      <ProdutcsItem />
     </div>
-  )
-}
+  );
+};
 
-export default Produtcs
+export default Products;

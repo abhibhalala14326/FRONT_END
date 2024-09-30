@@ -1,12 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import TrendingSection from "./TrendingSection";
-import TItle from '../Helping-Components/TItle'
-
+import TItle from "../Helping-Components/TItle";
+import { NextArrow, PrevArrow } from "./ArrowTrending"; 
 
 function TrendingSlider() {
-
-
   var settings = {
     dots: true,
     infinite: false,
@@ -14,8 +12,8 @@ function TrendingSlider() {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
-    //   prevArrow: <button class="slide-arrow prev-arrow">zxcvbnmbvc</button>,
-    // nextArrow: <button class="slide-arrow next-arrow"></button>,
+    nextArrow: <NextArrow />, // Use custom next arrow
+    prevArrow: <PrevArrow />, // Use custom prev arrow
     responsive: [
       {
         breakpoint: 1024,
@@ -35,14 +33,6 @@ function TrendingSlider() {
         },
       },
       {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
         breakpoint: 580,
         settings: {
           slidesToShow: 1,
@@ -51,12 +41,13 @@ function TrendingSlider() {
       },
     ],
   };
+
   return (
     <>
-      <div className="w-full flex  flex-col gap-10 h-full mt-10  overflow-hidden">
+      <div className="Trending w-full flex flex-col gap-10 h-full mt-10 relative overflow-hidden">
         <TItle heding={"Trending Products"} />
-        <div className="w-full flex justify-center ">
-          <div className="slider-container    w-[90%] ">
+        <div className="w-full flex justify-center">
+          <div className="slider-container w-[90%]">
             <Slider {...settings}>
               <TrendingSection />
               <TrendingSection />
@@ -65,7 +56,6 @@ function TrendingSlider() {
             </Slider>
           </div>
         </div>
-        
       </div>
     </>
   );
