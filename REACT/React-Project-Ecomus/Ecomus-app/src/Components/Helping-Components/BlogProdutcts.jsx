@@ -43,14 +43,14 @@ const BlogProducts = () => {
   ];
 
   return (
-    <main className="grid lg:grid-cols-3 sm:grid-cols-2 px-5 gap-x-5 mb-5">
+    <main className="grid lg:grid-cols-3 sm:grid-cols-2 md:px-5 gap-x-5 mb-5 w-full">
       {blogPosts.map((post) => (
-        <div key={post.id} className="mb-10 flex flex-col w-full overflow-hidden gap-4">
+        <div key={post.id} className="mb-10 flex flex-col w-full  gap-4">
           <div className="w-fit relative overflow-hidden">
             <img
               src={post.imgSrc}
               alt={post.title}
-              className="h-full w-full object-cover hover:scale-110 duration-1000 object-center"
+              className="h-full w-full  hover:scale-110 duration-1000 object-center"
             />
             <button className="absolute bottom-4 left-5 bg-white px-3 py-1 rounded-md">
               {post.category}

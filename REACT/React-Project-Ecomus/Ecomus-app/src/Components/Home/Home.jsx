@@ -13,16 +13,17 @@ import Navbartop from '../Helping-Components/NavbarTop.jsx';
 
 
 
-
+import AboutUs from '../Layout/Pages/AboutUs.jsx';
 
 
 function Home() {
 
   return (
     <>
+      <AboutUs/>
       {/* <Navbartop /> */}
 
-      <div className="overflow-hidden px-4">
+      {/* <div className="overflow-hidden ">
         <SliderOffer />
         <Marquee />
         <CategorySlider />
@@ -34,7 +35,7 @@ function Home() {
         <BlogPostSlider />
         <Shipping />
         <Footer />
-      </div>
+      </div> */}
     </>
   );
 }

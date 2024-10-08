@@ -3,11 +3,10 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
-
 const NextArrow = ({ className, style, onClick }) => {
   return (
     <div
-      className={`${className} next-arrow  text-black   border border-black border-solid w-7 h-7   absolute right-0 sm:-top-[13%] lg:-top-[15%] max-sm:top[10%] -top-[16%]  cursor-pointer`}
+      className={`${className} next-arrow  text-black   border border-black border-solid w-7 h-7   absolute right-0 sm:-top-[13%] lg:-top-[15%] max-sm:top[10%] -top-[15%]  cursor-pointer`}
       style={{ ...style }}
       onClick={onClick}
     >
@@ -16,10 +15,10 @@ const NextArrow = ({ className, style, onClick }) => {
   );
 };
 
-const PrevArrow = ({ className, style, onClick }) => {
+const  PrevArrow = ({ className, style, onClick }) => {
   return (
     <div
-      className={`${className} prev-arrow left-[75%] -top-[16%]  lg:left-[94%] sm:left-[90%] border sm:-top-[13%] border-black border-solid w-7 h-7  flex items-center justify-center    lg:-top-[15%] absolute text-white  cursor-pointer`}
+      className={`${className} prev-arrow left-[75%] -top-[15%]  lg:left-[94%] sm:left-[90%] border sm:-top-[13%] border-black border-solid w-7 h-7  flex items-center justify-center    lg:-top-[15%] absolute text-white  cursor-pointer`}
       style={{ ...style, zIndex: 1 }}
       onClick={onClick}
     >

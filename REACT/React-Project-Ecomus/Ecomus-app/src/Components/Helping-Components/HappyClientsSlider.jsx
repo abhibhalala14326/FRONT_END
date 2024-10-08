@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import HappyClients from './HappyClients';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { NextArrow , PrevArrow } from './HappyClientsArrow';
 
 
 const HappyClientsSlider = () => {
@@ -12,6 +13,8 @@ const HappyClientsSlider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    nextArrow: <NextArrow />, // Use custom next arrow
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,

@@ -7,6 +7,6 @@ import Memo from './Memo.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Memo/>
+    {/* <Memo/> */}
   </StrictMode>,
 )

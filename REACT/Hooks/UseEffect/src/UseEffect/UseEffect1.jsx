@@ -10,8 +10,9 @@ const UseEffect1 = () => {
     // },[])
 
      useEffect(() => {
-       alert("hello Abhi ka hal hei");
-     }, []);
+       
+       return () => alert("hello Abhi ka hal hei");
+     }, [state]);
 
   return (
     <>
