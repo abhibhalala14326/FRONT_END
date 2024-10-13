@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"; // Import Slider from react-slick
 import img1 from "../../assets/asset_49.jpeg";
 import img2 from "../../assets/asset_48.jpeg";
@@ -13,6 +15,7 @@ const ProductPage = () => {
     minutes: 51,
     seconds: 13,
   });
+
   const [selectedImage, setSelectedImage] = useState(img2);
 
   const productImages = [img1, img2, img1, img2, img1, img1, img1];
@@ -27,7 +30,7 @@ const ProductPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    beforeChange: (current, next) => setSelectedImage(productImages[next]), // Correctly update selected image
+    beforeChange: (current, next) => setSelectedImage(productImages[next]),
   };
 
   const handleQuantityChange = (type) => {
@@ -49,42 +52,40 @@ const ProductPage = () => {
 
   return (
     <div className="container mx-auto p-5">
-      <div className="flex flex-col md:flex-row h-svh">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-8">
         {/* Product Images */}
-        <div className="w-full md:w-1/2">
-          <div className="grid grid-cols-2 md:grid-cols-[20%_80%] h-svh gap-4">
-            {/* Thumbnail List */}
-            <div className="hidden md:flex md:flex-col overflow-auto scrollbar-hide gap-2">
+        <div className="grid grid-cols-1     md:grid-cols-[20%_80%] gap-4 ">
+          {/* Thumbnail List */}
+          <div className="flex md:flex md:flex-col md:h-svh  gap-2 max-md:order-1  overflow-auto scrollbar-hide">
+            {productImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Product ${index}`}
+                className={`w-[100px] h-full object-cover  cursor-pointer border ${
+                  selectedImage === img ? "border-black" : "border-gray-300"
+                }`}
+                onClick={() => handleThumbnailClick(img, index)}
+              />
+            ))}
+          </div>
+          <div className="w-full  pr-5">
+            <Slider ref={sliderRef} {...settings}>
               {productImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`Product ${index}`}
-                  className={`w-full h-auto cursor-pointer border ${
-                    selectedImage === img ? "border-black" : "border-gray-300"
-                  }`}
-                  onClick={() => handleThumbnailClick(img, index)}
-                />
+                <div key={index}>
+                  <img
+                    src={img}
+                    alt={`Product ${index}`}
+                    className="w-full h-auto mb-4 border border-gray-300 rounded"
+                  />
+                </div>
               ))}
-            </div>
-            <div className="w-full pr-5">
-              <Slider ref={sliderRef} {...settings}>
-                {productImages.map((img, index) => (
-                  <div key={index}>
-                    <img
-                      src={img}
-                      alt={`Product ${index}`}
-                      className="w-full h-auto mb-4 border border-gray-300 rounded"
-                    />
-                  </div>
-                ))}
-              </Slider>
-            </div>
+            </Slider>
           </div>
         </div>
 
         {/* Product Details */}
-        <div className="w-full md:w-1/2 md:pl-8 mt-4 md:mt-0">
+        <div className="grid gap-4">
           <h1 className="text-2xl mb-2">Cotton Jersey Top</h1>
 
           {/* Price and Offer Section */}
@@ -96,7 +97,7 @@ const ProductPage = () => {
             </span>
           </div>
 
-          {/* Live status */}
+          {/* Live Status */}
           <p className="text-gray-500 text-sm mb-3">
             <strong className="text-white px-2 py-1 bg-black">20</strong> people
             are viewing this right now
@@ -180,7 +181,7 @@ const ProductPage = () => {
             </button>
           </div>
 
-          {/* Extra options */}
+          {/* Extra Options */}
           <div className="flex gap-4 flex-wrap">
             <button className="text-gray-500">Compare color</button>
             <button className="text-gray-500">Ask a question</button>
