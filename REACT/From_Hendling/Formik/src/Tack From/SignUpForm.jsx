@@ -11,14 +11,28 @@ const SignUpForm = () => {
   };
 
   const validationSchema = yup.object({
-    username:yup.string().required('enter name'),
-    email:yup.string().email('not valid Eamil').required('enter the email'),
-    password:yup.string().required('enater the password'),
-    confirmPassword:yup.string().oneOf([yup.ref('password'),null],'password must match')
-
+    username: yup.string().required("enter name"),
+    email: yup
+      .string()
+      .email("not valid Eamil")
+      .matches(
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        "Invalid email"
+      )
+      .required("enter the email"),
+    password: yup
+      .string()   .matches(
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+    "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number, and one special character."
+  )
+      .min(8, "Password must be at least 8 characters")
+      .required("enater the password"),
+    confirmPassword: yup
+      .string()
+      .oneOf([yup.ref("password"), null], "password must match"),
   });
 
-  const onSubmit = values => {
+  const onSubmit = (values) => {
     // Handle form submission here
     console.log(values);
   };

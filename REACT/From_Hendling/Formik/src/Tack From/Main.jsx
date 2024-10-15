@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <div>
       {/* <StudentDetailsForm/> */}
-      <RegistrationForm/>
-      {/* <SignUpForm/> */}
+      {/* <RegistrationForm/> */}
+      <SignUpForm/>
     </div>
   )
 }

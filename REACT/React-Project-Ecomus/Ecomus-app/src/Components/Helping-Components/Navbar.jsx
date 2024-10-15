@@ -7,8 +7,8 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", link: "/", icon: "ri-arrow-down-s-line" },
     { name: "Shop", link: "/shop", icon: "ri-arrow-down-s-line" },
-    { name: "Products", link: "/products", icon: "ri-arrow-down-s-line" },
-    { name: "Pages", link: "/pages", icon: "ri-arrow-down-s-line" },
+    { name: "Products", link: "/produtcs1", icon: "ri-arrow-down-s-line" },
+    { name: "Pages", link: "/page", icon: "ri-arrow-down-s-line" },
     { name: "Blog", link: "/blog", icon: "ri-arrow-down-s-line" },
   ];
 

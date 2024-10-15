@@ -1,11 +1,10 @@
 import React from 'react'
-import AboutUs from './AboutUs'
+import ProductDetails from '../../Helping-Components/ProductDetails'
 
 const Page = () => {
   return (
     <div>
-      <AboutUs/>
-      
+      <ProductDetails/>
     </div>
   )
 }

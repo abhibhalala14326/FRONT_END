@@ -15,7 +15,10 @@ const StudentDetailsForm = () => {
 
   const validationSchema = yup.object({
     name: yup.string().required("Enter name"),
-    email: yup.string().email("not valid Email").required("enter the Eamil"),
+    email: yup.string().email("not valid Email").matches(
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        "Invalid email"
+      ).required("enter the Eamil"),
     school: yup.string().required("Enter School name"),
     gender: yup.string().required("you gender"),
     course: yup

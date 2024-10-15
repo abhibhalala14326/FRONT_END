@@ -131,8 +131,7 @@ const ProductPage = () => {
                 />
               ))}
             </div>
-          </div>
-
+          </div>                                            
           {/* Size Options */}
           <div className="mb-4">
             <p className="font-semibold mb-1">Size: {size}</p>
