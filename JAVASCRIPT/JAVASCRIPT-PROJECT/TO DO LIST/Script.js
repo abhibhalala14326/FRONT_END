@@ -13,6 +13,8 @@ function listshow() {
     ListADD.innerHTML = ` ${list} <i class="fa-solid fa-trash"></i>`;
     input.value = ""; 
 
+    localStorage.setItem('' ,list)
+
     //! Delete List
 
     let deleteList = ListADD.querySelector("i");
