@@ -10,8 +10,18 @@ let submit = () => {
 
 }
 
+let Add = () =>
+{
+    localStorage.setItem(obj.name, obj.Email);
 
-    localStorage.setItem(obj.name , obj.Email);
+}
+
+let Get = () =>
+{
+    localStorage.getItem(obj.name)
+    console.log(getItem);
+    
+}
 
 
 
