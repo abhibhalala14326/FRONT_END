@@ -9,7 +9,7 @@ const SignUp = () => {
 
   const onSubmit = (values) => {
     formDataSaveFromLocalStorage(values)
-    navigate("/");
+    navigate("/login");
     console.log(values)
   };
 
