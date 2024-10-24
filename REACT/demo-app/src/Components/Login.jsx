@@ -2,12 +2,13 @@ import React from "react";
 import * as yup from "yup";
 import { Formik, Field, ErrorMessage, Form } from "formik";
 import { useNavigate } from "react-router-dom";
-import { getFormDataFromLocalStorage } from "./Auth0";
+import { getFormDataFromLocalStorage  } from "./Auth0";
+import loding from '../assets/loding.svg'
 
 const Login = () => {
   const navigate = useNavigate();
 
-  const onSubmit = (values, { setSubmitting, setErrors }) => {
+  const onSubmit = (values, { setErrors, setSubmitting }) => {
     const user = getFormDataFromLocalStorage(values.email);
 
     setTimeout(() => {
@@ -15,11 +16,11 @@ const Login = () => {
         localStorage.setItem("authenticate", true);
         navigate("/");
       } else {
-        setErrors({ password: "Invalid Email or Password" });
+        setErrors({ password: "Invalid email or password" });
       }
 
       setSubmitting(false);
-    }, 2000);
+    }, 2000); 
   };
 
   const initialValues = {
@@ -94,10 +95,12 @@ const Login = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-500"
+                className={`w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-500 ${
+                  isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                }`}
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Loding....' : 'Submit'}
+                {isSubmitting ? "Loading..." : "Submit"}
               </button>
             </Form>
           )}
