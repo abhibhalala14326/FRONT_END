@@ -10,7 +10,7 @@ const ProductSlider = ({ items }) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed:100,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -48,7 +48,7 @@ const ProductSlider = ({ items }) => {
               key={item.product_id}
               className="mr-10 overflow-hidden pb-7 w-full"
             >
-              <div className="w-full h-full overflow-hidden relative group/card lg:w-full">
+              <div className="w-full h-full relative group/card lg:w-full">
                 <div className="absolute flex justify-center sm:hidden items-center bottom-0 h-14 w-full gap-2">
                   <BiSolidShow className="bg-white text-4xl p-2 rounded hover:bg-black hover:text-white" />
                   <IoMdHeartEmpty className="bg-white text-4xl p-2 max-md:hidden rounded hover:bg-black hover:text-white" />
@@ -65,7 +65,7 @@ const ProductSlider = ({ items }) => {
 
                 {/* Offer Label */}
                 {item.Offer && (
-                  <div className="flex justify-end absolute top-2 right-2 z-50">
+                  <div className="flex justify-end absolute top-2 right-5 z-50">
                     <p className=" text-sm px-4 py-1 text-white bg-[#fc5732] rounded-full">
                       -33&#37;
                     </p>
@@ -88,12 +88,12 @@ const ProductSlider = ({ items }) => {
                 )}
 
                 {/* Hover Image */}
-                <div className="w-full h-full opacity-0 inset-0 lg:w-full group-hover/card:opacity-100 duration-1000 absolute">
+                <div className="w-full h-full opacity-0 inset-0 overflow-hidden lg:w-full group-hover/card:opacity-100 duration-1000 absolute">
                   <div className="relative">
                     <img
                       src={item.hover_img}
                       alt={item.product_name}
-                      className="w-full h-full hover:scale-105 object-cover duration-1000"
+                      className="w-[95%] h-full hover:scale-105 object-cover duration-1000"
                     />
 
                     <div className="absolute flex justify-center items-center bottom-6 h-14 w-full gap-2">
@@ -105,7 +105,7 @@ const ProductSlider = ({ items }) => {
 
                     {/* Size Option */}
                     {item.size && (
-                      <div className="flex justify-center gap-4 text-white absolute bottom-0 bg-black/50 h-auto w-full">
+                      <div className="flex justify-center gap-4 text-white absolute bottom-0 bg-black/50 h-auto w-[95%]">
                         {item.Sizes.map((size, index) => (
                           <p key={index} className="text-[12px] py-1">
                             {size}

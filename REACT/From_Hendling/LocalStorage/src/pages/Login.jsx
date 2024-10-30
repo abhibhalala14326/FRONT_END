@@ -10,16 +10,16 @@ const Login = () => {
   const onSubmit = (values, { setSubmitting, setErrors }) => {
     const user = getFormDataFromLocalStorage(values.email);
 
-    setTimeout(() => {
+    // setTimeout(() => {
       if (user && user.password === values.password) {
         localStorage.setItem("authenticate", true);
         navigate("/");
       } else {
-        setErrors({ password: "Invalid Email or Password" });
+        setErrors({ password: "Invalid Email or Password " });
       }
 
-      setSubmitting(false);
-    }, 2000);
+      setSubmitting(true);
+    // }, 2000);
   };
 
   const initialValues = {
@@ -94,9 +94,10 @@ const Login = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-500"
-                disabled={isSubmitting}
+                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-500" 
+                // disabled={isSubmitting}
               >
+              
                 {isSubmitting ? 'Loding....' : 'Submit'}
               </button>
             </Form>

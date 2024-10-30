@@ -1,12 +1,12 @@
 import React from 'react'
-import ProductDetails from '../../Helping-Components/ProductDetails'
+import AboutUs from './AboutUs';
 
 const Page = () => {
   return (
     <div>
-      <ProductDetails/>
+      <AboutUs />
     </div>
-  )
+  );
 }
 
 export default Page

@@ -10,12 +10,12 @@ const Navbartop = () => {
     <>
       <header>
         <nav className="w-full bg-black text-white flex justify-around items-center py-2">
-          <div className="lg:flex gap-5 sm:hidden">
+          <div className="lg:flex gap-5 sm:hidden max-sm:hidden">
             <p>(+333) 123-168</p>
             <p>sayhello@ecomus.com</p>
           </div>
           <SimpleSlider />
-          <div className="lg:flex gap-10 sm:hidden">
+          <div className="lg:flex gap-10 sm:hidden  max-sm:hidden">
             <Dropdown name="EUR" img={Eur} />
           </div>
         </nav>

@@ -1,20 +1,27 @@
-import React from 'react'
-import styles from "../../css/Item.module.css";
-import img from "../../assets/electronic-6.jpg";
-const Item = () => {
-  return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.text}>
-          <h2 className=" font-[600] text-[#0a070760]">True Earbuds</h2>
-          <p className=" title font-[600] text-[18px] sm:text-2xl capitalize">
-            smart assistant
-          </p>
-          <button className='btn1'>Shop now</button>
-        </div>
-      </div>
-    </>
-  );
-}
+import React from "react";
+import img from "../../assets/electronic_6.jpg";
 
-export default Item
+const Item = ({img , title , titletwo}) => {
+  return (
+    <div className="flex flex-col items-center p-1 py-4 w-[90%] bg-gray-100 rounded-lg shadow-lg">
+      <div className="flex flex-col items-center">
+        <img
+          src={img}
+          alt="Electronic item"
+          className="w-full h-auto rounded-md"
+        />
+        <h2 className="font-semibold text-black text-sm mt-4  uppercase">
+          {titletwo}
+        </h2>
+        <p className="font-semibold text-lg sm:text-4xl mx-sm:text-xl capitalize mt-2">
+          {title}
+        </p>
+        <button className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+          Shop now
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Item;

@@ -2,7 +2,7 @@ import React from 'react'
 import { IoStar } from "react-icons/io5";
 
 
-import img from "../../assets/electronic-16.jpg";
+import img from "../../assets/electronic_16.jpg";
 
 
 const HappyClients = () => {

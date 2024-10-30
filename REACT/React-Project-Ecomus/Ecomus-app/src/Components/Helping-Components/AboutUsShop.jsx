@@ -1,11 +1,42 @@
 import React from "react";
-// import galleryImg1 from "../assets/images/gallery-7.jpg";
-// import galleryImg2 from "../assets/images/gallery-3.jpg";
-// import galleryImg3 from "../assets/images/gallery-5.jpg";
-// import galleryImg4 from "../assets/images/gallery-8.jpg";
-import galleryImg5 from "../../assets/asset_41.jpeg";
+import Slider from "react-slick";
+
+import galleryImg1 from "../../assets/gallery_1.jpg";
+import galleryImg2 from "../../assets/gallery-2.jpg";
+import galleryImg3 from "../../assets/gallery-3.jpg";
+import galleryImg4 from "../../assets/gallery-4.jpg";
+import galleryImg5 from "../../assets/gallery-5.jpg";
 
 const AboutShopGram = () => {
+  const galleryImages = [
+    galleryImg1,
+    galleryImg2,
+    galleryImg3,
+    galleryImg4,
+    galleryImg5,
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5, 
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 3 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
+
   return (
     <div className="containerSection">
       <div className="text-center">
@@ -15,43 +46,20 @@ const AboutShopGram = () => {
           another.
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 my-10">
-        <div className="aboutShopGram rounded-xl overflow-hidden relative group">
-          <img
-            src={galleryImg5}
-            alt=""
-            className="aboutShopGramImg group-hover:scale-110 duration-[3s]"
-          />
-        </div>
-        <div className="aboutShopGram rounded-xl overflow-hidden relative group">
-          <img
-            src={galleryImg5}
-            alt=""
-            className="aboutShopGramImg group-hover:scale-110 duration-[3s]"
-          />
-        </div>
-        <div className="aboutShopGram rounded-xl overflow-hidden relative group">
-          <img
-            src={galleryImg5}
-            alt=""
-            className="aboutShopGramImg group-hover:scale-110 duration-[3s]"
-          />
-        </div>
-        <div className="aboutShopGram rounded-xl overflow-hidden relative group">
-          <img
-            src={galleryImg5}
-            alt=""
-            className="aboutShopGramImg group-hover:scale-110 duration-[3s]"
-          />
-        </div>
-        <div className="aboutShopGram rounded-xl overflow-hidden relative group">
-          <img
-            src={galleryImg5}
-            alt=""
-            className="aboutShopGramImg group-hover:scale-110 duration-[3s]"
-          />
-        </div>
-      </div>
+      <Slider {...settings} className="my-10">
+        {galleryImages.map((image, index) => (
+          <div
+            key={index}
+            className="aboutShopGram rounded-xl overflow-hidden relative group px-2"
+          >
+            <img
+              src={image}
+              alt={`Gallery Image `}
+              className="aboutShopGramImg group-hover:scale-110 duration-[3s] w-full"
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

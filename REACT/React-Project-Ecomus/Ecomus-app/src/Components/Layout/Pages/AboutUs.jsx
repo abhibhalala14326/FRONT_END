@@ -3,6 +3,7 @@ import AboutInfo from '../../Helping-Components/AboutInfo'
 import AboutShopGram from '../../Helping-Components/AboutUsShop'
 import AboutUsBanner from '../../Helping-Components/AboutUsTopBenner'
 import AboutOur from '../../Helping-Components/AboutOur'
+import FooterWhite from '../../Helping-Components/FooterWhite'
 
 
 const AboutUs = () => {
@@ -13,6 +14,8 @@ const AboutUs = () => {
       <AboutOur />
 
       <AboutShopGram />
+
+      <FooterWhite />
     </>
   );
 }

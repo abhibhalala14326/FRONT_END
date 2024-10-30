@@ -8,17 +8,46 @@ import Page from "../Layout/Pages/Page";
 import Produtcs from "../Layout/Pages/Produtcs";
 import Shop from "../Layout/Pages/Shop";
 import Navbar from "../Helping-Components/Navbar";
+import ContactUs from "./Pages/ContactUs";
+import Faq from "./Pages/Faq";
+import ViewCart from "./Pages/ViewCart";
+import Checkout from "./Pages/Checkout";
+import Errorspages from "./Pages/Errorspages";
+import Wishlist from "./Pages/Wishlist";
+import Login from "./Pages/Login";
+import Signup from "./Signup";
 
 const Layout = () => {
   const List = createBrowserRouter([
     {
       path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/signup",
+      element: <Signup />,
+    },
+    {
+      path: "/wishlist",
+      element: <Wishlist />,
+    },
+    {
+      path: "/viewcart",
+      element: <ViewCart />,
+    },
+    {
+      path: "/checkout",
+      element: <Checkout />,
+    },
+
+    {
+      path: "/",
       element: <Navbar />,
       children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
         {
           path: "/blog",
           element: <Blog />,
@@ -35,7 +64,19 @@ const Layout = () => {
           path: "/Shop",
           element: <Shop />,
         },
+        {
+          path: "/contactus",
+          element: <ContactUs />,
+        },
+        {
+          path: "/faq",
+          element: <Faq />,
+        },
       ],
+    },
+    {
+      path: "*",
+      element: <Errorspages />,
     },
   ]);
   return (
