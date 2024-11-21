@@ -15,7 +15,7 @@ import Checkout from "./Pages/Checkout";
 import Errorspages from "./Pages/Errorspages";
 import Wishlist from "./Pages/Wishlist";
 import Login from "./Pages/Login";
-import Signup from "./Signup";
+import SignUp from "./Signup";
 
 const Layout = () => {
   const List = createBrowserRouter([
@@ -29,7 +29,7 @@ const Layout = () => {
     },
     {
       path: "/signup",
-      element: <Signup />,
+      element: <SignUp />,
     },
     {
       path: "/wishlist",

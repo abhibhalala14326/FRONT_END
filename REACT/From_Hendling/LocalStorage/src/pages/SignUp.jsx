@@ -2,7 +2,7 @@ import React from "react";
 import * as yup from "yup";
 import { Formik, Field, ErrorMessage, Form } from "formik";
 import { useNavigate } from "react-router-dom";
-import { formDataSaveFromLocalStorage } from "./Auth0";
+import { formDataSaveFromLocalStorage } from "../pages/Auth0";
 
 const SignUp = () => {
   const navigate = useNavigate();
