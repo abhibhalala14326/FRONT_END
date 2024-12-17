@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Axios = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
 
  
 

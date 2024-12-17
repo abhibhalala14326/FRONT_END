@@ -1,6 +1,7 @@
-const redux = require('redux')
-const createStore = redux.createStore;
-
+const redux = require('redux');
+const { createStore, combineReducers, applyMiddleware } = redux;
+const ReduxLogger = require('redux-logger');
+const logger = ReduxLogger.createLogger();
 //? constant   
 
 const BUY_CHOCOLAET = 'BUY_CHOCOLAET'
@@ -48,12 +49,34 @@ const ChocoReducer = (state = initialState, action) => {
                 ...state,
                 NUMOFCHOCOLETE: state.NUMOFCHOCOLETE - 1
             }
+
+
+        default: return state
+
+    }
+}
+
+const CakeReducer = (state = initialState, action) => {
+    switch (action.type) {
+
         case BUY_CAKE:
             return {
                 ...state,
 
                 NUMOFCAKE: state.NUMOFCAKE - 1
             }
+
+
+
+
+        default: return state
+
+    }
+}
+
+const PantoneReducer = (state = initialState, action) => {
+    switch (action.type) {
+
 
         case BUY_PANTONE:
             return {
@@ -68,8 +91,9 @@ const ChocoReducer = (state = initialState, action) => {
     }
 }
 
+const RootReducer = combineReducers({ChocoReducer , CakeReducer , PantoneReducer})
 
-const store = createStore(ChocoReducer)
+const store = createStore(RootReducer , applyMiddleware(logger))
 
 console.log(store.getState());
 
