@@ -1,7 +1,4 @@
 import React from "react";
-// import aboutImg1 from "../assets/images/collection-69.jpg";
-// import aboutImg2 from "../assets/images/collection-70.jpg";
-// import aboutImg3 from "../assets/images/collection-71.jpg";
 import galleryImg1 from "../../assets/About_1.jpg";
 import galleryImg2 from "../../assets/About_2.jpg";
 import galleryImg3 from "../../assets/About_3.jpg";

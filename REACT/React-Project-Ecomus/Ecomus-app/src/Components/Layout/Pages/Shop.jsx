@@ -17,7 +17,6 @@ const Shop = () => {
       </NextUIProvider>
 
       <Product />
-      <ShopPageButton />
       <FooterWhite />
     </>
   );

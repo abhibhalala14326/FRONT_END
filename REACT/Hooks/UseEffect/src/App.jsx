@@ -3,6 +3,7 @@ import './App.css'
 import UseEffect1 from './UseEffect/UseEffect1'
 import Chnage_state from './Project/State'
 import Counter from './Project/Counter'
+import Blog from './Project/Blog'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <>
    {/* <UseEffect1/> */}
    {/* <Chnage_state/> */}
-   <Counter/>
+   {/* <Counter/> */}
+   <Blog/>
     
     </>
   )
