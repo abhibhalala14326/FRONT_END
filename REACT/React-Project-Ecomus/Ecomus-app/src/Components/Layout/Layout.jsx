@@ -16,6 +16,10 @@ import Errorspages from "./Pages/Errorspages";
 import Wishlist from "./Pages/Wishlist";
 import Login from "./Pages/Login";
 import SignUp from "./Signup";
+import Description from "./Pages/Description";
+import ReturnPolicies from "./Pages/ReturnPolicies";
+import ShippingProduct from "./Pages/ShippingProduct";
+import Review from "./Pages/Review";
 
 const Layout = () => {
   const List = createBrowserRouter([
@@ -59,6 +63,24 @@ const Layout = () => {
         {
           path: "/produtcs1",
           element: <Produtcs />,
+          children: [
+            {
+              path: "description",
+              element: <Description />,
+            },
+            {
+              path: "ReturnPolicies",
+              element: <ReturnPolicies />,
+            },
+            {
+              path: "Shipping",
+              element: <ShippingProduct />,
+            },
+            {
+              path: "review",
+              element: <Review />,
+            },
+          ],
         },
         {
           path: "/Shop",

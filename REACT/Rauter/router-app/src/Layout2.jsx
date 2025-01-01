@@ -4,6 +4,8 @@ import AboutUs from './pages/AboutUs'
 import Login from './pages/Login'
 import Navbar from './components/Navbar'
 import { createBrowserRouter , RouterProvider , Router } from 'react-router-dom'
+import LoderData from './pages/LoderData'
+import Loder, {  LoaderApi } from './pages/Loder'
 
 // const Layout2 = () => {
 //     const List = createBrowserRouter( [
@@ -46,6 +48,17 @@ const Layout2 = () => {
         {
           path: "/login",
           element: <Login />,
+        },
+        {
+          path: "/loderData",
+          element: <LoderData />,
+          children: [
+            {
+              index: true,
+              element: <Loder />,
+              loader: LoaderApi,
+            },
+          ],
         },
       ],
     },

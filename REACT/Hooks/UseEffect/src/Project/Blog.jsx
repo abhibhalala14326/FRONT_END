@@ -5,6 +5,8 @@ const Blog = () => {
   const [blogData, setBlogData] = useState([]); 
   const [currentPage, setCurrentPage] = useState(1);
   const PerPage = 10;
+  const totalPages = Math.ceil(blogData.length / PerPage);
+
 
   useEffect(() => {
     axios
@@ -19,7 +21,24 @@ const Blog = () => {
   const indexOfFirstPost = indexOfLastPost - PerPage; // 0
   const currentPosts = blogData.slice(indexOfFirstPost, indexOfLastPost);  // 0,6
 
-
+ const renderPageNumbers = () => {
+   return Array.from({ length: totalPages }, (_, index) => index + 1).map(
+     (page) => (
+       <button
+         key={page}
+         disabled={page === currentPage}
+         onClick={()=>setCurrentPage(page)}
+         className={`px-4 py-2 rounded-md ${
+           page === currentPage
+             ? "bg-blue-500 text-white cursor-not-allowed"
+             : "bg-gray-300 hover:bg-gray-400"
+         }`}
+       >
+         {page}
+       </button>
+     )
+   );
+ };
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
@@ -51,10 +70,29 @@ const Blog = () => {
       </div>
 
       {/* Pagination */}
-      <button onClick={() => setCurrentPage((next) => next + 1)}>{">"}</button>
 
-      <span></span>
-      <button>{"<"}</button>
+      <div className="flex justify-center mt-8 space-x-4">
+        <button
+          onClick={() => setCurrentPage((prev) => prev - 1)}
+          disabled={currentPage === 1}
+          className={`px-4 py-2 rounded-md ${
+            currentPage === 1
+              ? "bg-gray-300 cursor-not-allowed"
+              : "bg-blue-500 text-white hover:bg-blue-600"
+          }`}
+        >
+          {"<"} Previous
+        </button>
+        {/* <span className="text-lg font-medium">{currentPage}</span> */}
+        <div className="flex space-x-2">{renderPageNumbers()}</div>
+        <button
+          onClick={() => setCurrentPage((prev) => prev + 1)}
+          disabled={currentPage === totalPages}
+          className={`px-4 py-2 rounded-md `}
+        >
+          Next {">"}
+        </button>
+      </div>
     </div>
   );
 };

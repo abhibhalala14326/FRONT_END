@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <nav className="flex justify-around items-center p-5  mb-6 bg-[#2e242436]">
+        <nav className="flex justify-around items-center p-5  mb-6 bg-[#2e242436] text-white px-8">
           <div className="text-4xl ">Logo</div>
           <div>
             <ul className="flex  gap-5">
@@ -42,10 +42,13 @@ const Navbar = () => {
               <li>
                 <NavLink to="/login">Login</NavLink>
               </li>
+              <li>
+                <NavLink to="/loderdata">loderdata</NavLink>
+              </li>
             </ul>
           </div>
         </nav>
-        <Outlet/>
+        <Outlet />
       </div>
     </>
   );

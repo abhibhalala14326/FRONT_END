@@ -17,7 +17,7 @@ export default function FooterWhite() {
     { name: "Returns + Exchanges", href: "#" },
     { name: "Shipping", href: "#" },
     { name: "Terms & Conditions", href: "#" },
-    { name: "FAQ's", href: "#" },
+    { name: "FAQ's", href: "faq" },
     { name: "Compare", href: "#" },
     { name: "My Wishlist", href: "#" },
   ];
@@ -25,7 +25,7 @@ export default function FooterWhite() {
   const aboutLinks = [
     { name: "Our Story", href: "#" },
     { name: "Visit Our Store", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Contact Us", href: "contactus" },
     { name: "Account", href: "#" },
   ];
 

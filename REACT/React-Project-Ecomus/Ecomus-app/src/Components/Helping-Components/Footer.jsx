@@ -12,6 +12,7 @@ import visa from "../../assets/visa.png";
 
 
 import logo from "../../assets/logo-white.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   const Help = [
@@ -19,7 +20,7 @@ export default function Footer() {
     { name: "Returns + Exchanges", href: "#" },
     { name: "Shipping", href: "#" },
     { name: "Terms & Conditions", href: "#" },
-    { name: "FAQ's", href: "#" },
+    { name: "FAQ's", href: "faq" },
     { name: "Compare", href: "#" },
     { name: "My Wishlist", href: "#" },
   ];
@@ -27,7 +28,7 @@ export default function Footer() {
   const aboutLinks = [
     { name: "Our Story", href: "#" },
     { name: "Visit Our Store", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Contact Us", href: "contactus" },
     { name: "Account", href: "#" },
   ];
 
@@ -75,12 +76,12 @@ export default function Footer() {
             <ul className="list-none flex flex-col gap-1 text-[14px] duration-1000 text-[#a1a1a1]">
               {Help.map((link, id) => (
                 <li key={id}>
-                  <a
-                    href={link.href}
+                  <NavLink
+                    to={link.href}
                     className="text-muted-foreground hover:text-[#93f859]"
                   >
                     {link.name}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -93,12 +94,12 @@ export default function Footer() {
             <ul className="list-none flex flex-col gap-3 text-[14px] mt-2 text-[#a1a1a1]">
               {aboutLinks.map((link, id) => (
                 <li key={id}>
-                  <a
-                    href={link.href}
+                  <NavLink
+                    to={link.href}
                     className="text-muted-foreground hover:text-[#93f859]"
                   >
                     {link.name}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -131,7 +132,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="h-[1px] bg-white w-[80%] mt-10"></p>
-      
+
       {/* devloper name */}
 
       <div className="flex sm:flex-row flex-col items-center gap-3 sm:gap-0 sm:justify-between w-full py-6">
