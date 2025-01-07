@@ -3,6 +3,7 @@ import { useLoaderData, NavLink } from "react-router-dom";
 
 const Loader = () => {
   const data = useLoaderData();
+console.log('Loader render ');
 
   console.log(data);
 
@@ -20,6 +21,9 @@ const Loader = () => {
 };
 
 export  const LoaderApi = async () => {
+
+  console.log('LoaderApi rend');
+  
   const res = await fetch("https://dummyjson.com/products")
   
   return await res.json();; 
