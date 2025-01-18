@@ -1,91 +1,102 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import BookDetails from "./BookDetails";
+import BookForm from "./BookForm";
+import { BooksObj } from "../App";
+import { MdDeleteOutline } from "react-icons/md";
+import Edit from "./Edit";
 
-const books = [
-  {
-    id: 1,
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    description:
-      "A novel set in the 1920s, exploring themes of wealth, society, and the American Dream.",
-  },
-  {
-    id: 2,
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    description:
-      "A story of racial injustice and moral growth in the American South.",
-  },
-  {
-    id: 3,
-    title: "1984",
-    author: "George Orwell",
-    description: "A dystopian novel about totalitarianism and surveillance.",
-  },
-  {
-    id: 4,
-    title: "Moby Dick",
-    author: "Herman Melville",
-    description:
-      "The epic tale of Captain Ahab's obsession with the white whale, Moby Dick.",
-  },
-  {
-    id: 5,
-    title: "Pride and Prejudice",
-    author: "Jane Austen",
-    description:
-      "A classic novel about love, class, and society in 19th-century England.",
-  },
-];
 const BookList = () => {
-  const [selectedBook, setSelectedBook] = useState();
-  console.log(selectedBook);
+  const [Book, setBook] = useState(null);
+  const [EditBook, setEditBook] = useState(null);
+  const [search, setSearch] = useState("");
+
+  const { BookObj, SetBookobj } = useContext(BooksObj);
 
   const onBack = () => {
-    setSelectedBook();
+    setBook(null);
   };
+
+  const filtered = BookObj.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="bg-gray-100 w-full p-8">
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Search books..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full px-4 py-2 rounded-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
+        />
+      </div>
+
       <h1 className="text-2xl font-bold text-center mb-6">
-        {selectedBook ? "Book Details" : "Book List"}
+        {EditBook ? "Edit Book " : Book ? "Book Details" : "Book List"}
       </h1>
-      <div className=" mx-auto">
-        {selectedBook ? (
-          <BookDetails book={selectedBook} onBack={onBack} />
-        ) : (
-          <div className="bg-white  rounded-lg p-6">
-            {books.length > 0 ? (
-              <ul className="divide-y divide-gray-200">
-                {books.map((book) => (
-                  <li
-                    key={book.id}
-                    className="py-4 flex justify-between items-center "
-                    onClick={() => setSelectedBook(book)}
-                  >
-                    <div>
-                      <h2 className="text-lg font-semibold text-gray-800">
-                        {book.title}
-                      </h2>
-                      <p className="text-gray-600">by {book.author}</p>
-                    </div>
-                    <button
-                      className="text-blue-500 hover:underline"
-                      onClick={(e) => {
-                        setSelectedBook([book]);
-                      }}
-                    >
-                      View Details
-                    </button>
-                  </li>
-                ))}
-              </ul>
+      {EditBook ? (
+        // update book
+        <Edit book={EditBook} onBack={() => setEditBook()} />
+      ) : (
+        <div>
+          <div className="mx-auto">
+            {Book ? (
+              // book details
+              <BookDetails book={Book} Back={onBack} />
             ) : (
-              <p className="text-gray-500 text-center">No books available.</p>
+              <div className="bg-white rounded-lg p-6">
+                {filtered.length > 0 ? (
+                  <ul className="divide-y divide-gray-200">
+                    {filtered.map((book) => (
+                      <li
+                        key={book.id}
+                        className="py-4 flex justify-between items-center"
+                      >
+                        <div
+                          onClick={() => setBook(book)}
+                          className="cursor-pointer"
+                        >
+                          <h2 className="text-lg font-semibold text-gray-800">
+                            {book.title}
+                          </h2>
+                          <p className="text-gray-600">by {book.author}</p>
+                        </div>
+                        <div className=" flex gap-3">
+                          <button
+                            className="text-blue-500 hover:underline"
+                            onClick={() => setBook(book)}
+                          >
+                            View Details
+                          </button>
+                          <button
+                            className="text-red-500 hover:underline"
+                            onClick={() => {
+                              SetBookobj(
+                                BookObj.filter((id) => id.title !== book.title)
+                              );
+                            }}
+                          >
+                            <MdDeleteOutline className="text-3xl" />
+                          </button>
+
+                          <button onClick={() => setEditBook(book)}>
+                            Edit
+                          </button>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-gray-500 text-center">
+                    No books available.
+                  </p>
+                )}
+              </div>
             )}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

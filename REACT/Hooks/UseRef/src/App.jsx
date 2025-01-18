@@ -1,19 +1,15 @@
 import './App.css'
-import UseRef from './Comonenets/UseRef'
-import UseRef2 from './Comonenets/UseRef2'
-import UseRef3 from './Comonenets/UseRef3'
+import Counter from './Task/Counter';
+import Layout from './Task/Layout';
 function App() {
 
 
   return (
     <>
-    <UseRef/>
-    <UseRef2/>
-
-    <UseRef3/>
-    
+     <Layout/>
+     {/* <Counter/> */}
     </>
-  )
+  );
 }
 
 export default App
