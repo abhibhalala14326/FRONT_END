@@ -4,6 +4,9 @@ import vd from '../assets/vd.mp4'
 const PlayingPausingvideo = () => {
   const videoRef = useRef(null);
 
+  console.log(videoRef);
+  
+
   const playVideo = () => {
       videoRef.current.play();
     

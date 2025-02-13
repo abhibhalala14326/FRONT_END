@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 const FocusingInput = () => {
-  const inputRef = useRef<HTMLInputElement>()
+  const inputRef = useRef()
 
   const focusing = () => {
       inputRef.current.focus()

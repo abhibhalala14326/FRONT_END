@@ -1,20 +1,47 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useReducer, useState } from "react";
 import BookDetails from "./BookDetails";
 import BookForm from "./BookForm";
 import { BooksObj } from "../App";
 import { MdDeleteOutline } from "react-icons/md";
 import Edit from "./Edit";
 
+
+const BookReducer = (state,action) => {
+  switch (action.type) {
+    case "SET_BOOK":
+      return { ...state, Book: action.payload };
+
+    case "SET_EDIT_BOOK":
+      return { ...state, EditBook: action.payload };
+
+    case "SET_SEARCH":
+      return { ...state, search: action.payload };
+
+    case "RESET_BOOK":
+      return { ...state, Book: null, EditBook: null };
+    default:
+      return state;
+  }
+};
+
 const BookList = () => {
-  const [Book, setBook] = useState(null);
-  const [EditBook, setEditBook] = useState(null);
-  const [search, setSearch] = useState("");
+  // const [Book, setBook] = useState(null);
+  // const [EditBook, setEditBook] = useState(null);
+  // const [search, setSearch] = useState("");
 
   const { BookObj, SetBookobj } = useContext(BooksObj);
 
-  const onBack = () => {
-    setBook(null);
+  const initialState = {
+    Book: null,
+    EditBook: null,
+    search: "",
   };
+
+  const  [state, dispatch]  = useReducer(BookReducer, initialState);
+
+  const { Book, EditBook, search } = state;
+
+
 
   const filtered = BookObj.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
@@ -27,7 +54,9 @@ const BookList = () => {
           type="text"
           placeholder="Search books..."
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) =>
+            dispatch({ type: "SET_SEARCH", payload: e.target.value })
+          }
           className="w-full px-4 py-2 rounded-md border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
         />
       </div>
@@ -37,13 +66,16 @@ const BookList = () => {
       </h1>
       {EditBook ? (
         // update book
-        <Edit book={EditBook} onBack={() => setEditBook()} />
+        <Edit book={EditBook} onBack={() => dispatch({ type: "RESET_BOOK" })} />
       ) : (
         <div>
           <div className="mx-auto">
             {Book ? (
               // book details
-              <BookDetails book={Book} Back={onBack} />
+              <BookDetails
+                book={Book}
+                Back={() => dispatch({ type: "RESET_BOOK" })}
+              />
             ) : (
               <div className="bg-white rounded-lg p-6">
                 {filtered.length > 0 ? (
@@ -54,7 +86,9 @@ const BookList = () => {
                         className="py-4 flex justify-between items-center"
                       >
                         <div
-                          onClick={() => setBook(book)}
+                          onClick={() =>
+                            dispatch({ type: "SET_BOOK", payload: book })
+                          }
                           className="cursor-pointer"
                         >
                           <h2 className="text-lg font-semibold text-gray-800">
@@ -65,7 +99,9 @@ const BookList = () => {
                         <div className=" flex gap-3">
                           <button
                             className="text-blue-500 hover:underline"
-                            onClick={() => setBook(book)}
+                            onClick={() =>
+                              dispatch({ type: "SET_BOOK", payload: book })
+                            }
                           >
                             View Details
                           </button>
@@ -80,7 +116,9 @@ const BookList = () => {
                             <MdDeleteOutline className="text-3xl" />
                           </button>
 
-                          <button onClick={() => setEditBook(book)}>
+                          <button
+                            onClick={() => dispatch({ type: "SET_EDIT_BOOK" ,payload:book})}
+                          >
                             Edit
                           </button>
                         </div>

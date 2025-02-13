@@ -3,17 +3,17 @@ import axios from "axios";
 
 const Blog = () => {
   const [blogData, setBlogData] = useState([]); 
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState();
   const PerPage = 10;
   const totalPages = Math.ceil(blogData.length / PerPage);
 
 
   useEffect(() => {
-    axios
-      .get("https://dummyapi.online/api/blogposts")
-      .then((res) => {
-        setBlogData(res.data);
-      })
+    axios.get("https://fakestoreapi.com/products").then((res) => {
+      // console.log(res);
+
+      setBlogData(res.data);
+    });
     
   }, []);
 
@@ -57,7 +57,7 @@ const Blog = () => {
               {post.title}
             </h2>
             <p className="text-gray-700 line-clamp-3">
-              {post.body || "No description available."}
+              {post.description }
             </p>
             <a
               href={`/blog/${post.id}`}

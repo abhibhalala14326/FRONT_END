@@ -13,6 +13,8 @@ import Navbar from "../../Helping-Components/Navbar.jsx";
 import TrendingSection from "../../Helping-Components/TrendingSection.jsx";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+// import { createContextProduct } from "../../../context/createContextProduct.jsx";
+import CreateContextProduct from "../../../context/CreateContextProduct.jsx";
 
 function Home() {
   const navigate = useNavigate();
@@ -28,19 +30,19 @@ function Home() {
   return (
     <>
       <div className="overflow-hidden flex flex-col gap-1">
-        <Navbartop />
-        <Navbar />
-        <SliderOffer />
-        <Marquee />
-        <CategorySlider />
-        <Discounts />
-        <DiscountsOffer />
-        <TrendingSection />
-        <ItemSlider />
-        <HappyClientsSlider />
-        <BlogPostSlider />
-        <Shipping />
-        <Footer />
+          <Navbartop />
+          <Navbar />
+          <SliderOffer />
+          <Marquee />
+          <CategorySlider />
+          <Discounts />
+          <DiscountsOffer />
+          <TrendingSection />
+          <ItemSlider />
+          <HappyClientsSlider />
+          <BlogPostSlider />
+          <Shipping />
+          <Footer />
       </div>
     </>
   );

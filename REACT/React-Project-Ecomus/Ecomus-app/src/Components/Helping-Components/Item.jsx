@@ -3,7 +3,7 @@ import img from "../../assets/electronic_6.jpg";
 
 const Item = ({img , title , titletwo}) => {
   return (
-    <div className="flex flex-col items-center p-1 py-4 w-[90%] bg-gray-100 rounded-lg shadow-lg">
+    <div className="flex flex-col items-center p-1 py-4 h-[50] w-[90%] bg-gray-100 rounded-lg shadow-lg">
       <div className="flex flex-col items-center">
         <img
           src={img}

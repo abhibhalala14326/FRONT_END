@@ -11,6 +11,7 @@ const BUY_PANTONE = 'BUY_PANTONE'
 // ! redux action  
 
 const buy_chocoleat = () => {
+    
     return {
         type: BUY_CHOCOLAET,
         info: 'first redux action'
@@ -58,16 +59,12 @@ const ChocoReducer = (state = initialState, action) => {
 
 const CakeReducer = (state = initialState, action) => {
     switch (action.type) {
-
         case BUY_CAKE:
             return {
                 ...state,
 
                 NUMOFCAKE: state.NUMOFCAKE - 1
             }
-
-
-
 
         default: return state
 
@@ -91,9 +88,9 @@ const PantoneReducer = (state = initialState, action) => {
     }
 }
 
-const RootReducer = combineReducers({ChocoReducer , CakeReducer , PantoneReducer})
+const RootReducer = combineReducers({ ChocoReducer, CakeReducer, PantoneReducer })
 
-const store = createStore(RootReducer , applyMiddleware(logger))
+const store = createStore(RootReducer, applyMiddleware(logger))
 
 console.log(store.getState());
 
